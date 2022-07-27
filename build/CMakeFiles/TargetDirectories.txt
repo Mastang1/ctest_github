@@ -1,7 +1,11 @@
 /home/tang/myproject/tang_test/cTest/build/CMakeFiles/rebuild_cache.dir
 /home/tang/myproject/tang_test/cTest/build/CMakeFiles/edit_cache.dir
+/home/tang/myproject/tang_test/cTest/build/CMakeFiles/test_argument_declear.dir
+/home/tang/myproject/tang_test/cTest/build/CMakeFiles/queuetest.dir
 /home/tang/myproject/tang_test/cTest/build/CMakeFiles/test_namespace.dir
 /home/tang/myproject/tang_test/cTest/build/CMakeFiles/test_UDPclient.dir
+/home/tang/myproject/tang_test/cTest/build/CMakeFiles/cpptest.dir
+/home/tang/myproject/tang_test/cTest/build/CMakeFiles/linuxFooTest.dir
 /home/tang/myproject/tang_test/cTest/build/CMakeFiles/test_UDPserver.dir
 /home/tang/myproject/tang_test/cTest/build/CMakeFiles/test_TCPclient.dir
 /home/tang/myproject/tang_test/cTest/build/CMakeFiles/test_TCPserver.dir

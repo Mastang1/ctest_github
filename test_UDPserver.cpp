@@ -36,12 +36,16 @@ int main(void)
 			inet_ntop(AF_INET, &cliaddr.sin_addr, str, sizeof(str)),
 			ntohs(cliaddr.sin_port));
 		//服务器端操作，小写转大写
-		for (i = 0; i < n; i++)
-			buf[i] = toupper(buf[i]);
-		n = sendto(sockfd, buf, n, 0, (struct sockaddr *)&cliaddr,
-			sizeof(cliaddr));
+		for (i = 0; i < n; i++) buf[i] = toupper(buf[i]);
+
+		n = sendto(sockfd, buf, n, 0, (struct sockaddr *)&cliaddr,sizeof(cliaddr));
 		if (n == -1)
-			perror("sendto error");
+		perror("sendto error");
+
+
+		
+			
+
 	}
 	close(sockfd);
 	return 0;

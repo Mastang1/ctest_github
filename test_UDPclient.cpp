@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 			perror("recvfrom error");
 		//将接收到的数据打印到终端
 		send(STDOUT_FILENO, buf, n, 0);
+		printf("\n%s\n", buf);
 	}
 	close(sockfd);
 	return 0;

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tang/myproject/tang_test/cTest/linuxFooTest.cpp
+sys/time.h
+-
+iostream
+-
+string
+-
+queue
+-
+

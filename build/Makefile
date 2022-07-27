@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_argument_declear
+
+# Build rule for target.
+test_argument_declear: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_argument_declear
+.PHONY : test_argument_declear
+
+# fast build rule for target.
+test_argument_declear/fast:
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/build
+.PHONY : test_argument_declear/fast
+
+#=============================================================================
+# Target rules for targets named queuetest
+
+# Build rule for target.
+queuetest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 queuetest
+.PHONY : queuetest
+
+# fast build rule for target.
+queuetest/fast:
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/build
+.PHONY : queuetest/fast
+
+#=============================================================================
 # Target rules for targets named test_namespace
 
 # Build rule for target.
@@ -135,6 +161,32 @@ test_UDPclient: cmake_check_build_system
 test_UDPclient/fast:
 	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/build
 .PHONY : test_UDPclient/fast
+
+#=============================================================================
+# Target rules for targets named cpptest
+
+# Build rule for target.
+cpptest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpptest
+.PHONY : cpptest
+
+# fast build rule for target.
+cpptest/fast:
+	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/build
+.PHONY : cpptest/fast
+
+#=============================================================================
+# Target rules for targets named linuxFooTest
+
+# Build rule for target.
+linuxFooTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 linuxFooTest
+.PHONY : linuxFooTest
+
+# fast build rule for target.
+linuxFooTest/fast:
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/build
+.PHONY : linuxFooTest/fast
 
 #=============================================================================
 # Target rules for targets named test_UDPserver
@@ -174,6 +226,87 @@ test_TCPserver: cmake_check_build_system
 test_TCPserver/fast:
 	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/build
 .PHONY : test_TCPserver/fast
+
+cpptest.o: cpptest.cpp.o
+
+.PHONY : cpptest.o
+
+# target to build an object file
+cpptest.cpp.o:
+	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/cpptest.cpp.o
+.PHONY : cpptest.cpp.o
+
+cpptest.i: cpptest.cpp.i
+
+.PHONY : cpptest.i
+
+# target to preprocess a source file
+cpptest.cpp.i:
+	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/cpptest.cpp.i
+.PHONY : cpptest.cpp.i
+
+cpptest.s: cpptest.cpp.s
+
+.PHONY : cpptest.s
+
+# target to generate assembly for a file
+cpptest.cpp.s:
+	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/cpptest.cpp.s
+.PHONY : cpptest.cpp.s
+
+linuxFooTest.o: linuxFooTest.cpp.o
+
+.PHONY : linuxFooTest.o
+
+# target to build an object file
+linuxFooTest.cpp.o:
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/linuxFooTest.cpp.o
+.PHONY : linuxFooTest.cpp.o
+
+linuxFooTest.i: linuxFooTest.cpp.i
+
+.PHONY : linuxFooTest.i
+
+# target to preprocess a source file
+linuxFooTest.cpp.i:
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/linuxFooTest.cpp.i
+.PHONY : linuxFooTest.cpp.i
+
+linuxFooTest.s: linuxFooTest.cpp.s
+
+.PHONY : linuxFooTest.s
+
+# target to generate assembly for a file
+linuxFooTest.cpp.s:
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/linuxFooTest.cpp.s
+.PHONY : linuxFooTest.cpp.s
+
+queuetest.o: queuetest.cpp.o
+
+.PHONY : queuetest.o
+
+# target to build an object file
+queuetest.cpp.o:
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/queuetest.cpp.o
+.PHONY : queuetest.cpp.o
+
+queuetest.i: queuetest.cpp.i
+
+.PHONY : queuetest.i
+
+# target to preprocess a source file
+queuetest.cpp.i:
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/queuetest.cpp.i
+.PHONY : queuetest.cpp.i
+
+queuetest.s: queuetest.cpp.s
+
+.PHONY : queuetest.s
+
+# target to generate assembly for a file
+queuetest.cpp.s:
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/queuetest.cpp.s
+.PHONY : queuetest.cpp.s
 
 test_TCPclient.o: test_TCPclient.cpp.o
 
@@ -283,6 +416,33 @@ test_UDPserver.cpp.s:
 	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/test_UDPserver.cpp.s
 .PHONY : test_UDPserver.cpp.s
 
+test_argument_declear.o: test_argument_declear.cpp.o
+
+.PHONY : test_argument_declear.o
+
+# target to build an object file
+test_argument_declear.cpp.o:
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/test_argument_declear.cpp.o
+.PHONY : test_argument_declear.cpp.o
+
+test_argument_declear.i: test_argument_declear.cpp.i
+
+.PHONY : test_argument_declear.i
+
+# target to preprocess a source file
+test_argument_declear.cpp.i:
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/test_argument_declear.cpp.i
+.PHONY : test_argument_declear.cpp.i
+
+test_argument_declear.s: test_argument_declear.cpp.s
+
+.PHONY : test_argument_declear.s
+
+# target to generate assembly for a file
+test_argument_declear.cpp.s:
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/test_argument_declear.cpp.s
+.PHONY : test_argument_declear.cpp.s
+
 test_namespace.o: test_namespace.cpp.o
 
 .PHONY : test_namespace.o
@@ -318,11 +478,24 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_argument_declear"
+	@echo "... queuetest"
 	@echo "... test_namespace"
 	@echo "... test_UDPclient"
+	@echo "... cpptest"
+	@echo "... linuxFooTest"
 	@echo "... test_UDPserver"
 	@echo "... test_TCPclient"
 	@echo "... test_TCPserver"
+	@echo "... cpptest.o"
+	@echo "... cpptest.i"
+	@echo "... cpptest.s"
+	@echo "... linuxFooTest.o"
+	@echo "... linuxFooTest.i"
+	@echo "... linuxFooTest.s"
+	@echo "... queuetest.o"
+	@echo "... queuetest.i"
+	@echo "... queuetest.s"
 	@echo "... test_TCPclient.o"
 	@echo "... test_TCPclient.i"
 	@echo "... test_TCPclient.s"
@@ -335,6 +508,9 @@ help:
 	@echo "... test_UDPserver.o"
 	@echo "... test_UDPserver.i"
 	@echo "... test_UDPserver.s"
+	@echo "... test_argument_declear.o"
+	@echo "... test_argument_declear.i"
+	@echo "... test_argument_declear.s"
 	@echo "... test_namespace.o"
 	@echo "... test_namespace.i"
 	@echo "... test_namespace.s"
