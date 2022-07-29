@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 27 09:45:10 2022
+# Make data base, printed on Fri Jul 29 09:34:40 2022
 
 # Variables
 
@@ -31,7 +31,7 @@ IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.3PJVP1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.D580P1
 # environment
 GDMSESSION = ubuntu-wayland
 # environment
@@ -45,7 +45,7 @@ VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_langu
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:32636
+JOURNAL_STREAM = 8:36135
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu-wayland:/etc/xdg
 # makefile
@@ -63,7 +63,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 1022
+MANAGERPID = 998
 # environment
 CLUTTER_IM_MODULE = fcitx
 # environment
@@ -81,7 +81,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 C_INCLUDE_PATH = :/usr/local/openssl/include:/usr/local/openssl/include
 # environment
-SESSION_MANAGER = local/tangPC:@/tmp/.ICE-unix/1130,unix/tangPC:/tmp/.ICE-unix/1130
+SESSION_MANAGER = local/tangPC:@/tmp/.ICE-unix/1138,unix/tangPC:/tmp/.ICE-unix/1138
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -93,7 +93,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 44cb8d6c2c55478a95266a3b44c08afd
+INVOCATION_ID = 86985c3ef20041849f00a04d0dc3a77c
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -103,7 +103,7 @@ XDG_SESSION_DESKTOP = ubuntu-wayland
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 10645
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2294
 # automatic
 %F = $(notdir $%)
 # environment
@@ -229,7 +229,7 @@ LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 10645
+VSCODE_PID = 2294
 # variable set hash-table stats:
 # Load=110/1024=11%, Rehash=0, Collisions=18/132=14%
 
@@ -239,9 +239,9 @@ VSCODE_PID = 10645
 
 # Directories
 
-# . (device 66306, inode 13243612): 19 files, no impossibilities.
+# . (device 66306, inode 13243612): 20 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -289,17 +289,17 @@ GNUmakefile:
 
 # No 'vpath' search paths.
 
-# No general ('VPATH' variable) search path.
  
 make: *** No rule to make target 'all'.  Stop.
 
+# No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 347 B / avg = 12 B
-# current buf: size = 8162 B / used = 347 B / count = 27 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 357 B / avg = 12 B
+# current buf: size = 8162 B / used = 357 B / count = 28 / avg = 12 B
 
-# strcache performance: lookups = 30 / hit rate = 10%
+# strcache performance: lookups = 31 / hit rate = 9%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=1/30=3%
-# Finished Make data base on Wed Jul 27 09:45:10 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/31=3%
+# Finished Make data base on Fri Jul 29 09:34:40 2022
 
  

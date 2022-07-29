@@ -163,19 +163,6 @@ test_UDPclient/fast:
 .PHONY : test_UDPclient/fast
 
 #=============================================================================
-# Target rules for targets named cpptest
-
-# Build rule for target.
-cpptest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cpptest
-.PHONY : cpptest
-
-# fast build rule for target.
-cpptest/fast:
-	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/build
-.PHONY : cpptest/fast
-
-#=============================================================================
 # Target rules for targets named linuxFooTest
 
 # Build rule for target.
@@ -226,33 +213,6 @@ test_TCPserver: cmake_check_build_system
 test_TCPserver/fast:
 	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/build
 .PHONY : test_TCPserver/fast
-
-cpptest.o: cpptest.cpp.o
-
-.PHONY : cpptest.o
-
-# target to build an object file
-cpptest.cpp.o:
-	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/cpptest.cpp.o
-.PHONY : cpptest.cpp.o
-
-cpptest.i: cpptest.cpp.i
-
-.PHONY : cpptest.i
-
-# target to preprocess a source file
-cpptest.cpp.i:
-	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/cpptest.cpp.i
-.PHONY : cpptest.cpp.i
-
-cpptest.s: cpptest.cpp.s
-
-.PHONY : cpptest.s
-
-# target to generate assembly for a file
-cpptest.cpp.s:
-	$(MAKE) -f CMakeFiles/cpptest.dir/build.make CMakeFiles/cpptest.dir/cpptest.cpp.s
-.PHONY : cpptest.cpp.s
 
 linuxFooTest.o: linuxFooTest.cpp.o
 
@@ -482,14 +442,10 @@ help:
 	@echo "... queuetest"
 	@echo "... test_namespace"
 	@echo "... test_UDPclient"
-	@echo "... cpptest"
 	@echo "... linuxFooTest"
 	@echo "... test_UDPserver"
 	@echo "... test_TCPclient"
 	@echo "... test_TCPserver"
-	@echo "... cpptest.o"
-	@echo "... cpptest.i"
-	@echo "... cpptest.s"
 	@echo "... linuxFooTest.o"
 	@echo "... linuxFooTest.i"
 	@echo "... linuxFooTest.s"

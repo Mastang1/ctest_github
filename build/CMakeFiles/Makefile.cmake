@@ -120,7 +120,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/queuetest.dir/DependInfo.cmake"
   "CMakeFiles/test_namespace.dir/DependInfo.cmake"
   "CMakeFiles/test_UDPclient.dir/DependInfo.cmake"
-  "CMakeFiles/cpptest.dir/DependInfo.cmake"
   "CMakeFiles/linuxFooTest.dir/DependInfo.cmake"
   "CMakeFiles/test_UDPserver.dir/DependInfo.cmake"
   "CMakeFiles/test_TCPclient.dir/DependInfo.cmake"
