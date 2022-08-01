@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 29 09:34:40 2022
+# Make data base, printed on Mon Aug  1 09:38:13 2022
 
 # Variables
 
@@ -31,7 +33,7 @@ IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.D580P1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.0TP8P1
 # environment
 GDMSESSION = ubuntu-wayland
 # environment
@@ -45,7 +47,7 @@ VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_langu
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:36135
+JOURNAL_STREAM = 8:27548
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu-wayland:/etc/xdg
 # makefile
@@ -63,7 +65,7 @@ XDG_DATA_DIRS = /usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-MANAGERPID = 998
+MANAGERPID = 1003
 # environment
 CLUTTER_IM_MODULE = fcitx
 # environment
@@ -81,7 +83,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 C_INCLUDE_PATH = :/usr/local/openssl/include:/usr/local/openssl/include
 # environment
-SESSION_MANAGER = local/tangPC:@/tmp/.ICE-unix/1138,unix/tangPC:/tmp/.ICE-unix/1138
+SESSION_MANAGER = local/tangPC:@/tmp/.ICE-unix/1132,unix/tangPC:/tmp/.ICE-unix/1132
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -93,7 +95,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 86985c3ef20041849f00a04d0dc3a77c
+INVOCATION_ID = f058f70fec314a5e99fba228392c0994
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -103,7 +105,7 @@ XDG_SESSION_DESKTOP = ubuntu-wayland
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2294
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2007
 # automatic
 %F = $(notdir $%)
 # environment
@@ -135,7 +137,7 @@ VSCODE_CODE_CACHE_PATH = /home/tang/.config/Code/CachedData/3b889b090b5ad5793f52
 # environment
 LOGNAME = tang
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 +F = $(notdir $+)
 # environment
@@ -229,7 +231,7 @@ LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2294
+VSCODE_PID = 2007
 # variable set hash-table stats:
 # Load=110/1024=11%, Rehash=0, Collisions=18/132=14%
 
@@ -239,9 +241,9 @@ VSCODE_PID = 2294
 
 # Directories
 
-# . (device 66306, inode 13243612): 20 files, no impossibilities.
+# . (device 66306, inode 13243612): 19 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 19 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -289,17 +291,15 @@ GNUmakefile:
 
 # No 'vpath' search paths.
 
- 
-make: *** No rule to make target 'all'.  Stop.
-
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 28 / storage = 357 B / avg = 12 B
-# current buf: size = 8162 B / used = 357 B / count = 28 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 345 B / avg = 12 B
+# current buf: size = 8162 B / used = 345 B / count = 27 / avg = 12 B
 
-# strcache performance: lookups = 31 / hit rate = 9%
+# strcache performance: lookups = 30 / hit rate = 10%
 # hash-table stats:
-# Load=28/8192=0%, Rehash=0, Collisions=1/31=3%
-# Finished Make data base on Fri Jul 29 09:34:40 2022
+ 
+# Load=27/8192=0%, Rehash=0, Collisions=1/30=3%
+# Finished Make data base on Mon Aug  1 09:38:13 2022
 
  
