@@ -15,6 +15,12 @@ set (CMAKE_CXX_STANDARD 11)
 # export CXX=/opt/rh/gcc-toolset-11/root/usr/bin/g++
 
 
+if (BUILD_TEST)
+    message (STATUS "--------------------build tests--------------------")
+    add_definitions(-DBUILD_TEST=1)                        # tangadd then delete this line
+endif()
+
+
 set (CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
 

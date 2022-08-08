@@ -1,7 +1,7 @@
 /*
  * ******************************************************************
  * 
- *---------指针变量的直接赋值操作，不涉及pop后的问题
+ *--------------
  * 
  * ******************************************************************
  */
@@ -13,40 +13,37 @@
 
 using namespace std;
 
+class Cfoo_test{
 
-struct utrace_info
-{
-    string traceId;
-    string bName;
-    string subSys;
-    string spanId;
-    string sessionId;
+public:
+    Cfoo_test(){};
+    ~Cfoo_test(){};
+
+#ifdef BUILD_TEST
+    void Fun_print(int16_t a, int16_t b)
+    {
+        printf("\n result: %d. \n",a+b);
+    }
+#endif
+
+private:
+
+
+public:
+
+    int16_t m_arg1;
+    int16_t m_arg2;
 };
-std::queue<struct utrace_info *> m_dataQueue;
+
 
 
 int  main()
 {
-    utrace_info *ptr_info = new utrace_info;
-    ptr_info->traceId   = "traceId";
-    ptr_info->bName     = "bName";
-    ptr_info->spanId    = "spanID";
-    ptr_info->subSys    = "subSys";
-    ptr_info->sessionId = "seesionID";
-    m_dataQueue.push(ptr_info);
-
-
-    utrace_info *p1 = m_dataQueue.front();
+    Cfoo_test test;
     
-    utrace_info * p2;
-    p2 = m_dataQueue.front();
-
-    m_dataQueue.pop(); 
-
-    cout<<p1->traceId<<endl;
-    cout<<p2->traceId<<endl;
-
-
+#ifdef BUILD_TEST
+    test.Fun_print(3,3);
+#endif
     return 0;
 }
 

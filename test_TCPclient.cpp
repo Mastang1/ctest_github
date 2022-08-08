@@ -26,12 +26,13 @@ int main(int argc, char *argv[])
 	str = argv[1];
 	printf("\n++++++ %s  ++++++++\n",argv[0]);
 	//创建客户端套接字文件
-	sockfd = socket(AF_INET, SOCK_STREAM, 0);
+	sockfd = socket(AF_INET, SOCK_STREAM, 0);			//init file descriptor, init in sheet
 	//初始化服务器端口地址
 	bzero(&servaddr, sizeof(servaddr));
 	servaddr.sin_family = AF_INET;
-	inet_pton(AF_INET, "127.0.0.1", &servaddr.sin_addr);
+	inet_pton(AF_INET, "127.0.0.1", &servaddr.sin_addr);//inet_pton - convert IPv4 and IPv6 addresses from text to binary form, init 3 key arguments
 	servaddr.sin_port = htons(SERV_PORT);
+
 	//请求链接
 	connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
 	//发送数据

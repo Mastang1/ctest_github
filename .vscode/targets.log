@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug  1 09:38:13 2022
+# Make data base, printed on Mon Aug  8 11:27:16 2022
 
 # Variables
 
@@ -33,7 +33,7 @@ IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.0TP8P1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.AOGTQ1
 # environment
 GDMSESSION = ubuntu-wayland
 # environment
@@ -45,9 +45,9 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1d735750dbb1b9066c7513078396ba0f.zh-cn","_translationsConfigFile":"/home/tang/.config/Code/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/tcf.json","_cacheRoot":"/home/tang/.config/Code/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn","_resolvedLanguagePackCoreLocation":"/home/tang/.config/Code/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/3b889b090b5ad5793f524b5d1d39fda662b96a2a","_corruptedFile":"/home/tang/.config/Code/clp/1d735750dbb1b9066c7513078396ba0f.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
-_ = /usr/share/code/code
+_ = /usr/bin/gnome-session
 # environment
-JOURNAL_STREAM = 8:27548
+JOURNAL_STREAM = 8:28538
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu-wayland:/etc/xdg
 # makefile
@@ -63,9 +63,9 @@ MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu-wayland:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=4af341fb842af8015ed0babc62f068d3
 # environment
-MANAGERPID = 1003
+MANAGERPID = 1007
 # environment
 CLUTTER_IM_MODULE = fcitx
 # environment
@@ -77,25 +77,25 @@ VSCODE_CWD = /home/tang
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/lib/tang-lib:/lib/tang-lib
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/lib/tang-lib
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-C_INCLUDE_PATH = :/usr/local/openssl/include:/usr/local/openssl/include
+C_INCLUDE_PATH = :/usr/local/openssl/include
 # environment
-SESSION_MANAGER = local/tangPC:@/tmp/.ICE-unix/1132,unix/tangPC:/tmp/.ICE-unix/1132
+SESSION_MANAGER = local/tangPC:@/tmp/.ICE-unix/1134,unix/tangPC:/tmp/.ICE-unix/1134
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
-LIBRARY_PATH = :/usr/local/openssl/lib:/usr/local/openssl/lib
+LIBRARY_PATH = :/usr/local/openssl/lib
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = f058f70fec314a5e99fba228392c0994
+INVOCATION_ID = b07077e391ed41aab5265d7488f93c77
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -105,11 +105,11 @@ XDG_SESSION_DESKTOP = ubuntu-wayland
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2007
+GIO_LAUNCHED_DESKTOP_FILE_PID = 20449
 # automatic
 %F = $(notdir $%)
 # environment
-CPLUS_INCLUDE_PATH = :/usr/local/openssl/include:/usr/local/openssl/include
+CPLUS_INCLUDE_PATH = :/usr/local/openssl/include
 # environment
 DISPLAY = :0
 # environment
@@ -129,7 +129,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/tang
 # environment
-LD_LIBRARY_PATH = :/usr/local/openssl/lib:/usr/local/openssl/lib
+LD_LIBRARY_PATH = :/usr/local/openssl/lib
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
@@ -137,7 +137,7 @@ VSCODE_CODE_CACHE_PATH = /home/tang/.config/Code/CachedData/3b889b090b5ad5793f52
 # environment
 LOGNAME = tang
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 +F = $(notdir $+)
 # environment
@@ -195,6 +195,8 @@ GDK_BACKEND = x11
 # environment
 LC_PAPER = zh_CN.UTF-8
 # environment
+NO_AT_BRIDGE = 1
+# environment
 QT_ACCESSIBILITY = 1
 # default
 MAKEFILES := 
@@ -206,6 +208,8 @@ LC_NUMERIC = zh_CN.UTF-8
 LC_MEASUREMENT = zh_CN.UTF-8
 # environment
 LC_ALL = C
+# environment
+DBUS_STARTER_BUS_TYPE = session
 # environment
 QT4_IM_MODULE = fcitx
 # environment
@@ -231,9 +235,11 @@ LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2007
+VSCODE_PID = 1980
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=4af341fb842af8015ed0babc62f068d3
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=18/132=14%
+# Load=113/1024=11%, Rehash=0, Collisions=18/135=13%
 
 # Pattern-specific Variable Values
 
@@ -241,9 +247,9 @@ VSCODE_PID = 2007
 
 # Directories
 
-# . (device 66306, inode 13243612): 19 files, no impossibilities.
+# . (device 66306, inode 13243612): 20 files, no impossibilities.
 
-# 19 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -293,13 +299,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 345 B / avg = 12 B
-# current buf: size = 8162 B / used = 345 B / count = 27 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 354 B / avg = 12 B
+# current buf: size = 8162 B / used = 354 B / count = 28 / avg = 12 B
 
-# strcache performance: lookups = 30 / hit rate = 10%
+# strcache performance: lookups = 31 / hit rate = 9%
 # hash-table stats:
  
-# Load=27/8192=0%, Rehash=0, Collisions=1/30=3%
-# Finished Make data base on Mon Aug  1 09:38:13 2022
+# Load=28/8192=0%, Rehash=0, Collisions=1/31=3%
+# Finished Make data base on Mon Aug  8 11:27:16 2022
 
  
