@@ -1,34 +1,56 @@
 #include <iostream>
 #include <string>
-#include <condition_variable>
-#include <mutex>
-#include <thread> 
-//#include <pthread.h>
+#include <functional>
 
 using namespace std;
 
-void IncreaseWithLockGuard(int *value,std::mutex *m3x){
-    for (int i = 0; i < 10000; ++i) {
-        std::lock_guard<std::mutex> lock(*m3x);
-        *value+=1;
-    }
-}
+class test
+{
+public:
+    test() {}
 
-void IncreaseWIthLockUnlock(int *value,std::mutex *m3x){
-    for (int i = 0; i < 10000; ++i) {
-        m3x->lock();
-        *value+=1;
-        m3x->unlock();
+    void print(const std::string &str)
+    {
+        std::cout << __func__ << "() " << str << std::endl;
     }
-}
 
-int main(int argc, char *argv[]) {
-    mutex m3x;
-    int value = 0;
-    thread th0(IncreaseWithLockGuard,&value,&m3x);
-    thread th1(IncreaseWithLockGuard,&value,&m3x);
-    th0.join();
-    th1.join();
-    cout << "value:" << value << endl;
+    ~test() {}
+};
+
+int main(int argc, char **argv)
+{
+    test t;
+
+    auto func = &test::print;
+    (t.*func)("ffff");
     return 0;
 }
+
+
+
+//====================================================
+// #include <iostream>
+// #include <string>
+// #include <condition_variable>
+// #include <mutex>
+// #include <thread> 
+// //#include <pthread.h>
+
+// using namespace std;
+
+// unsigned char my_Hex[] = {0};
+
+// void ToolsByte2Hex(unsigned char bData,unsigned char hex[])
+// {
+//     int high=bData/16,low =bData %16;
+//     hex[0] = (high <10)?('0'+high):('A'+high-10);
+//     hex[1] = (low <10)?('0'+low):('A'+low-10);
+// }
+
+// int main(int argc, char *argv[]) {
+
+//     ToolsByte2Hex('!',my_Hex);
+//     cout<<my_Hex[0]<<my_Hex[1]<<endl;
+
+//     return 0;
+// }

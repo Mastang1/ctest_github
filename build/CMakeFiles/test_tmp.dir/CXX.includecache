@@ -11,10 +11,6 @@ iostream
 -
 string
 -
-condition_variable
--
-mutex
--
-thread
+functional
 -
 
