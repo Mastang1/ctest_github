@@ -28,7 +28,7 @@ int main(void)
 	servaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	servaddr.sin_port = htons(SERV_PORT);
 	//将套接字文件与服务器端口地址绑定
-	bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
+	bind(listenfd, (struct sockaddr *)&servaddr, sizeof(servaddr));//tang在这里强制转换sockaddr_in 类型 为sockaddr类型，两个类型所表示空间大小一致
 	//监听，并设置最大连接数为20
 	listen(listenfd, 20);
 	printf("Accepting connections ...\n");

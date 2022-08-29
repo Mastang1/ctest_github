@@ -1,1 +1,1 @@
-/usr/bin/c++   -O2 -Wall -g2 -ggdb  -rdynamic CMakeFiles/test_UDPclient.dir/test_UDPclient.cpp.o  -o bin/test_UDPclient 
+/usr/bin/c++    -rdynamic CMakeFiles/test_UDPclient.dir/test_UDPclient.cpp.o  -o bin/test_UDPclient 

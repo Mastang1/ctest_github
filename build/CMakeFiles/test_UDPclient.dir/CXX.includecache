@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tang/myproject/tang_test/cTest/test_UDPclient.cpp
+stdio.h
+-
+string.h
+-
+unistd.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+strings.h
+-
+ctype.h
+-
+

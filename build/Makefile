@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_tmp
+
+# Build rule for target.
+test_tmp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_tmp
+.PHONY : test_tmp
+
+# fast build rule for target.
+test_tmp/fast:
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/build
+.PHONY : test_tmp/fast
+
+#=============================================================================
+# Target rules for targets named ifconfig_fun
+
+# Build rule for target.
+ifconfig_fun: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ifconfig_fun
+.PHONY : ifconfig_fun
+
+# fast build rule for target.
+ifconfig_fun/fast:
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/build
+.PHONY : ifconfig_fun/fast
+
+#=============================================================================
+# Target rules for targets named test_ioctl_fun
+
+# Build rule for target.
+test_ioctl_fun: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_ioctl_fun
+.PHONY : test_ioctl_fun
+
+# fast build rule for target.
+test_ioctl_fun/fast:
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/build
+.PHONY : test_ioctl_fun/fast
+
+#=============================================================================
 # Target rules for targets named test_argument_declear
 
 # Build rule for target.
@@ -213,6 +252,33 @@ test_TCPserver: cmake_check_build_system
 test_TCPserver/fast:
 	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/build
 .PHONY : test_TCPserver/fast
+
+ifconfig_fun.o: ifconfig_fun.cpp.o
+
+.PHONY : ifconfig_fun.o
+
+# target to build an object file
+ifconfig_fun.cpp.o:
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/ifconfig_fun.cpp.o
+.PHONY : ifconfig_fun.cpp.o
+
+ifconfig_fun.i: ifconfig_fun.cpp.i
+
+.PHONY : ifconfig_fun.i
+
+# target to preprocess a source file
+ifconfig_fun.cpp.i:
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/ifconfig_fun.cpp.i
+.PHONY : ifconfig_fun.cpp.i
+
+ifconfig_fun.s: ifconfig_fun.cpp.s
+
+.PHONY : ifconfig_fun.s
+
+# target to generate assembly for a file
+ifconfig_fun.cpp.s:
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/ifconfig_fun.cpp.s
+.PHONY : ifconfig_fun.cpp.s
 
 linuxFooTest.o: linuxFooTest.cpp.o
 
@@ -403,6 +469,33 @@ test_argument_declear.cpp.s:
 	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/test_argument_declear.cpp.s
 .PHONY : test_argument_declear.cpp.s
 
+test_ioctl_fun.o: test_ioctl_fun.cpp.o
+
+.PHONY : test_ioctl_fun.o
+
+# target to build an object file
+test_ioctl_fun.cpp.o:
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/test_ioctl_fun.cpp.o
+.PHONY : test_ioctl_fun.cpp.o
+
+test_ioctl_fun.i: test_ioctl_fun.cpp.i
+
+.PHONY : test_ioctl_fun.i
+
+# target to preprocess a source file
+test_ioctl_fun.cpp.i:
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/test_ioctl_fun.cpp.i
+.PHONY : test_ioctl_fun.cpp.i
+
+test_ioctl_fun.s: test_ioctl_fun.cpp.s
+
+.PHONY : test_ioctl_fun.s
+
+# target to generate assembly for a file
+test_ioctl_fun.cpp.s:
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/test_ioctl_fun.cpp.s
+.PHONY : test_ioctl_fun.cpp.s
+
 test_namespace.o: test_namespace.cpp.o
 
 .PHONY : test_namespace.o
@@ -430,6 +523,33 @@ test_namespace.cpp.s:
 	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/test_namespace.cpp.s
 .PHONY : test_namespace.cpp.s
 
+test_tmp.o: test_tmp.cpp.o
+
+.PHONY : test_tmp.o
+
+# target to build an object file
+test_tmp.cpp.o:
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/test_tmp.cpp.o
+.PHONY : test_tmp.cpp.o
+
+test_tmp.i: test_tmp.cpp.i
+
+.PHONY : test_tmp.i
+
+# target to preprocess a source file
+test_tmp.cpp.i:
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/test_tmp.cpp.i
+.PHONY : test_tmp.cpp.i
+
+test_tmp.s: test_tmp.cpp.s
+
+.PHONY : test_tmp.s
+
+# target to generate assembly for a file
+test_tmp.cpp.s:
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/test_tmp.cpp.s
+.PHONY : test_tmp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -438,6 +558,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_tmp"
+	@echo "... ifconfig_fun"
+	@echo "... test_ioctl_fun"
 	@echo "... test_argument_declear"
 	@echo "... queuetest"
 	@echo "... test_namespace"
@@ -446,6 +569,9 @@ help:
 	@echo "... test_UDPserver"
 	@echo "... test_TCPclient"
 	@echo "... test_TCPserver"
+	@echo "... ifconfig_fun.o"
+	@echo "... ifconfig_fun.i"
+	@echo "... ifconfig_fun.s"
 	@echo "... linuxFooTest.o"
 	@echo "... linuxFooTest.i"
 	@echo "... linuxFooTest.s"
@@ -467,9 +593,15 @@ help:
 	@echo "... test_argument_declear.o"
 	@echo "... test_argument_declear.i"
 	@echo "... test_argument_declear.s"
+	@echo "... test_ioctl_fun.o"
+	@echo "... test_ioctl_fun.i"
+	@echo "... test_ioctl_fun.s"
 	@echo "... test_namespace.o"
 	@echo "... test_namespace.i"
 	@echo "... test_namespace.s"
+	@echo "... test_tmp.o"
+	@echo "... test_tmp.i"
+	@echo "... test_tmp.s"
 .PHONY : help
 
 

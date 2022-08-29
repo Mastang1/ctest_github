@@ -1,1 +1,1 @@
-/usr/bin/c++   -O2 -Wall -g2 -ggdb  -rdynamic CMakeFiles/test_UDPserver.dir/test_UDPserver.cpp.o  -o bin/test_UDPserver 
+/usr/bin/c++    -rdynamic CMakeFiles/test_UDPserver.dir/test_UDPserver.cpp.o  -o bin/test_UDPserver 

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tang/myproject/tang_test/cTest/test_tmp.cpp
+iostream
+-
+string
+-
+condition_variable
+-
+mutex
+-
+thread
+-
+

@@ -2,6 +2,7 @@
     "files.associations": {
         "functional": "cpp",
         "cstdio": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "thread": "cpp"
     }
 }

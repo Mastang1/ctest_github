@@ -1,1 +1,1 @@
-/usr/bin/c++   -O2 -Wall -g2 -ggdb  -rdynamic CMakeFiles/linuxFooTest.dir/linuxFooTest.cpp.o  -o bin/linuxFooTest 
+/usr/bin/c++    -rdynamic CMakeFiles/linuxFooTest.dir/linuxFooTest.cpp.o  -o bin/linuxFooTest 
