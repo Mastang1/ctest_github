@@ -34,15 +34,21 @@ int main(void)
 	printf("Accepting connections ...\n");
 	//接收客户端数据，并处理请求
 	while (1) {
+		printf("\n\n now, waiting client conneciting...");
+
 		cliaddr_len = sizeof(cliaddr);
 		connfd = accept(listenfd, (struct sockaddr *)&cliaddr, &cliaddr_len);
 		n = recv(connfd, buf, MAXLINE, 0);
+
 		printf("received from %s at PORT %d\n",
 			inet_ntop(AF_INET, &cliaddr.sin_addr, str, sizeof(str)),
 			ntohs(cliaddr.sin_port));
+
 		for (i = 0; i < n; i++)
 			buf[i] = toupper(buf[i]);
 		send(connfd, buf, n, 0);
+		//tang test
+		printf("\n+++++ %s ++++\n", str);
 		//关闭连接
 		close(connfd);
 	}

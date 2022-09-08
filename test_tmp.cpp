@@ -4,25 +4,21 @@
 
 using namespace std;
 
-class test
+int foo(int a, int b)
 {
-public:
-    test() {}
+    
+    printf("\n++ %d ++\n", (a+b));
+    return 1;
+}
 
-    void print(const std::string &str)
-    {
-        std::cout << __func__ << "() " << str << std::endl;
-    }
-
-    ~test() {}
-};
+ int(*pfoo)(int a, int b);
 
 int main(int argc, char **argv)
 {
-    test t;
+    pfoo = foo;
+    pfoo(3,3);
 
-    auto func = &test::print;
-    (t.*func)("ffff");
+
     return 0;
 }
 

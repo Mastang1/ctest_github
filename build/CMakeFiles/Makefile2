@@ -53,17 +53,20 @@ CMAKE_BINARY_DIR = /home/tang/myproject/tang_test/cTest/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/test_tmp.dir/all
-all: CMakeFiles/ifconfig_fun.dir/all
-all: CMakeFiles/test_ioctl_fun.dir/all
-all: CMakeFiles/test_argument_declear.dir/all
-all: CMakeFiles/queuetest.dir/all
-all: CMakeFiles/test_namespace.dir/all
-all: CMakeFiles/test_UDPclient.dir/all
-all: CMakeFiles/linuxFooTest.dir/all
-all: CMakeFiles/test_UDPserver.dir/all
-all: CMakeFiles/test_TCPclient.dir/all
+all: CMakeFiles/mulit_thread_test.dir/all
 all: CMakeFiles/test_TCPserver.dir/all
+all: CMakeFiles/test_TCPclient.dir/all
+all: CMakeFiles/condition_test.dir/all
+all: CMakeFiles/test_UDPserver.dir/all
+all: CMakeFiles/linuxFooTest.dir/all
+all: CMakeFiles/test_UDPclient.dir/all
+all: CMakeFiles/ifconfig_fun.dir/all
+all: CMakeFiles/test_namespace.dir/all
+all: CMakeFiles/queuetest.dir/all
+all: CMakeFiles/test_String.dir/all
+all: CMakeFiles/test_tmp.dir/all
+all: CMakeFiles/test_argument_declear.dir/all
+all: CMakeFiles/test_ioctl_fun.dir/all
 
 .PHONY : all
 
@@ -73,262 +76,76 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/test_tmp.dir/clean
-clean: CMakeFiles/ifconfig_fun.dir/clean
-clean: CMakeFiles/test_ioctl_fun.dir/clean
-clean: CMakeFiles/test_argument_declear.dir/clean
-clean: CMakeFiles/queuetest.dir/clean
-clean: CMakeFiles/test_namespace.dir/clean
-clean: CMakeFiles/test_UDPclient.dir/clean
-clean: CMakeFiles/linuxFooTest.dir/clean
-clean: CMakeFiles/test_UDPserver.dir/clean
-clean: CMakeFiles/test_TCPclient.dir/clean
+clean: CMakeFiles/mulit_thread_test.dir/clean
 clean: CMakeFiles/test_TCPserver.dir/clean
+clean: CMakeFiles/test_TCPclient.dir/clean
+clean: CMakeFiles/condition_test.dir/clean
+clean: CMakeFiles/test_UDPserver.dir/clean
+clean: CMakeFiles/linuxFooTest.dir/clean
+clean: CMakeFiles/test_UDPclient.dir/clean
+clean: CMakeFiles/ifconfig_fun.dir/clean
+clean: CMakeFiles/test_namespace.dir/clean
+clean: CMakeFiles/queuetest.dir/clean
+clean: CMakeFiles/test_String.dir/clean
+clean: CMakeFiles/test_tmp.dir/clean
+clean: CMakeFiles/test_argument_declear.dir/clean
+clean: CMakeFiles/test_ioctl_fun.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_tmp.dir
+# Target rules for target CMakeFiles/mulit_thread_test.dir
 
 # All Build rule for target.
-CMakeFiles/test_tmp.dir/all:
-	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/depend
-	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=21,22 "Built target test_tmp"
-.PHONY : CMakeFiles/test_tmp.dir/all
+CMakeFiles/mulit_thread_test.dir/all:
+	$(MAKE) -f CMakeFiles/mulit_thread_test.dir/build.make CMakeFiles/mulit_thread_test.dir/depend
+	$(MAKE) -f CMakeFiles/mulit_thread_test.dir/build.make CMakeFiles/mulit_thread_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=7,8 "Built target mulit_thread_test"
+.PHONY : CMakeFiles/mulit_thread_test.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_tmp.dir/rule: cmake_check_build_system
+CMakeFiles/mulit_thread_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_tmp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mulit_thread_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_tmp.dir/rule
+.PHONY : CMakeFiles/mulit_thread_test.dir/rule
 
 # Convenience name for target.
-test_tmp: CMakeFiles/test_tmp.dir/rule
+mulit_thread_test: CMakeFiles/mulit_thread_test.dir/rule
 
-.PHONY : test_tmp
+.PHONY : mulit_thread_test
 
 # clean rule for target.
-CMakeFiles/test_tmp.dir/clean:
-	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/clean
-.PHONY : CMakeFiles/test_tmp.dir/clean
+CMakeFiles/mulit_thread_test.dir/clean:
+	$(MAKE) -f CMakeFiles/mulit_thread_test.dir/build.make CMakeFiles/mulit_thread_test.dir/clean
+.PHONY : CMakeFiles/mulit_thread_test.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/ifconfig_fun.dir
+# Target rules for target CMakeFiles/test_TCPserver.dir
 
 # All Build rule for target.
-CMakeFiles/ifconfig_fun.dir/all:
-	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/depend
-	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=1,2 "Built target ifconfig_fun"
-.PHONY : CMakeFiles/ifconfig_fun.dir/all
+CMakeFiles/test_TCPserver.dir/all:
+	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/depend
+	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=15,16 "Built target test_TCPserver"
+.PHONY : CMakeFiles/test_TCPserver.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ifconfig_fun.dir/rule: cmake_check_build_system
+CMakeFiles/test_TCPserver.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ifconfig_fun.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_TCPserver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/ifconfig_fun.dir/rule
+.PHONY : CMakeFiles/test_TCPserver.dir/rule
 
 # Convenience name for target.
-ifconfig_fun: CMakeFiles/ifconfig_fun.dir/rule
+test_TCPserver: CMakeFiles/test_TCPserver.dir/rule
 
-.PHONY : ifconfig_fun
-
-# clean rule for target.
-CMakeFiles/ifconfig_fun.dir/clean:
-	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/clean
-.PHONY : CMakeFiles/ifconfig_fun.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_ioctl_fun.dir
-
-# All Build rule for target.
-CMakeFiles/test_ioctl_fun.dir/all:
-	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/depend
-	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=17,18 "Built target test_ioctl_fun"
-.PHONY : CMakeFiles/test_ioctl_fun.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_ioctl_fun.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_ioctl_fun.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_ioctl_fun.dir/rule
-
-# Convenience name for target.
-test_ioctl_fun: CMakeFiles/test_ioctl_fun.dir/rule
-
-.PHONY : test_ioctl_fun
+.PHONY : test_TCPserver
 
 # clean rule for target.
-CMakeFiles/test_ioctl_fun.dir/clean:
-	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/clean
-.PHONY : CMakeFiles/test_ioctl_fun.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_argument_declear.dir
-
-# All Build rule for target.
-CMakeFiles/test_argument_declear.dir/all:
-	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/depend
-	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=15,16 "Built target test_argument_declear"
-.PHONY : CMakeFiles/test_argument_declear.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_argument_declear.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_argument_declear.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_argument_declear.dir/rule
-
-# Convenience name for target.
-test_argument_declear: CMakeFiles/test_argument_declear.dir/rule
-
-.PHONY : test_argument_declear
-
-# clean rule for target.
-CMakeFiles/test_argument_declear.dir/clean:
-	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/clean
-.PHONY : CMakeFiles/test_argument_declear.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/queuetest.dir
-
-# All Build rule for target.
-CMakeFiles/queuetest.dir/all:
-	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/depend
-	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=5,6 "Built target queuetest"
-.PHONY : CMakeFiles/queuetest.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/queuetest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/queuetest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/queuetest.dir/rule
-
-# Convenience name for target.
-queuetest: CMakeFiles/queuetest.dir/rule
-
-.PHONY : queuetest
-
-# clean rule for target.
-CMakeFiles/queuetest.dir/clean:
-	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/clean
-.PHONY : CMakeFiles/queuetest.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_namespace.dir
-
-# All Build rule for target.
-CMakeFiles/test_namespace.dir/all:
-	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/depend
-	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=19,20 "Built target test_namespace"
-.PHONY : CMakeFiles/test_namespace.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_namespace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_namespace.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_namespace.dir/rule
-
-# Convenience name for target.
-test_namespace: CMakeFiles/test_namespace.dir/rule
-
-.PHONY : test_namespace
-
-# clean rule for target.
-CMakeFiles/test_namespace.dir/clean:
-	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/clean
-.PHONY : CMakeFiles/test_namespace.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_UDPclient.dir
-
-# All Build rule for target.
-CMakeFiles/test_UDPclient.dir/all:
-	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/depend
-	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=11,12 "Built target test_UDPclient"
-.PHONY : CMakeFiles/test_UDPclient.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_UDPclient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_UDPclient.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_UDPclient.dir/rule
-
-# Convenience name for target.
-test_UDPclient: CMakeFiles/test_UDPclient.dir/rule
-
-.PHONY : test_UDPclient
-
-# clean rule for target.
-CMakeFiles/test_UDPclient.dir/clean:
-	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/clean
-.PHONY : CMakeFiles/test_UDPclient.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/linuxFooTest.dir
-
-# All Build rule for target.
-CMakeFiles/linuxFooTest.dir/all:
-	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/depend
-	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=3,4 "Built target linuxFooTest"
-.PHONY : CMakeFiles/linuxFooTest.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/linuxFooTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/linuxFooTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/linuxFooTest.dir/rule
-
-# Convenience name for target.
-linuxFooTest: CMakeFiles/linuxFooTest.dir/rule
-
-.PHONY : linuxFooTest
-
-# clean rule for target.
-CMakeFiles/linuxFooTest.dir/clean:
-	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/clean
-.PHONY : CMakeFiles/linuxFooTest.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_UDPserver.dir
-
-# All Build rule for target.
-CMakeFiles/test_UDPserver.dir/all:
-	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/depend
-	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=13,14 "Built target test_UDPserver"
-.PHONY : CMakeFiles/test_UDPserver.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_UDPserver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_UDPserver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_UDPserver.dir/rule
-
-# Convenience name for target.
-test_UDPserver: CMakeFiles/test_UDPserver.dir/rule
-
-.PHONY : test_UDPserver
-
-# clean rule for target.
-CMakeFiles/test_UDPserver.dir/clean:
-	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/clean
-.PHONY : CMakeFiles/test_UDPserver.dir/clean
+CMakeFiles/test_TCPserver.dir/clean:
+	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/clean
+.PHONY : CMakeFiles/test_TCPserver.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/test_TCPclient.dir
@@ -337,7 +154,7 @@ CMakeFiles/test_UDPserver.dir/clean:
 CMakeFiles/test_TCPclient.dir/all:
 	$(MAKE) -f CMakeFiles/test_TCPclient.dir/build.make CMakeFiles/test_TCPclient.dir/depend
 	$(MAKE) -f CMakeFiles/test_TCPclient.dir/build.make CMakeFiles/test_TCPclient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=7,8 "Built target test_TCPclient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=13,14 "Built target test_TCPclient"
 .PHONY : CMakeFiles/test_TCPclient.dir/all
 
 # Build rule for subdir invocation for target.
@@ -358,31 +175,301 @@ CMakeFiles/test_TCPclient.dir/clean:
 .PHONY : CMakeFiles/test_TCPclient.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_TCPserver.dir
+# Target rules for target CMakeFiles/condition_test.dir
 
 # All Build rule for target.
-CMakeFiles/test_TCPserver.dir/all:
-	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/depend
-	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=9,10 "Built target test_TCPserver"
-.PHONY : CMakeFiles/test_TCPserver.dir/all
+CMakeFiles/condition_test.dir/all:
+	$(MAKE) -f CMakeFiles/condition_test.dir/build.make CMakeFiles/condition_test.dir/depend
+	$(MAKE) -f CMakeFiles/condition_test.dir/build.make CMakeFiles/condition_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=1,2 "Built target condition_test"
+.PHONY : CMakeFiles/condition_test.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_TCPserver.dir/rule: cmake_check_build_system
+CMakeFiles/condition_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_TCPserver.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/condition_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_TCPserver.dir/rule
+.PHONY : CMakeFiles/condition_test.dir/rule
 
 # Convenience name for target.
-test_TCPserver: CMakeFiles/test_TCPserver.dir/rule
+condition_test: CMakeFiles/condition_test.dir/rule
 
-.PHONY : test_TCPserver
+.PHONY : condition_test
 
 # clean rule for target.
-CMakeFiles/test_TCPserver.dir/clean:
-	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/clean
-.PHONY : CMakeFiles/test_TCPserver.dir/clean
+CMakeFiles/condition_test.dir/clean:
+	$(MAKE) -f CMakeFiles/condition_test.dir/build.make CMakeFiles/condition_test.dir/clean
+.PHONY : CMakeFiles/condition_test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_UDPserver.dir
+
+# All Build rule for target.
+CMakeFiles/test_UDPserver.dir/all:
+	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/depend
+	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=19,20 "Built target test_UDPserver"
+.PHONY : CMakeFiles/test_UDPserver.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_UDPserver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_UDPserver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_UDPserver.dir/rule
+
+# Convenience name for target.
+test_UDPserver: CMakeFiles/test_UDPserver.dir/rule
+
+.PHONY : test_UDPserver
+
+# clean rule for target.
+CMakeFiles/test_UDPserver.dir/clean:
+	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/clean
+.PHONY : CMakeFiles/test_UDPserver.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/linuxFooTest.dir
+
+# All Build rule for target.
+CMakeFiles/linuxFooTest.dir/all:
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/depend
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=5,6 "Built target linuxFooTest"
+.PHONY : CMakeFiles/linuxFooTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/linuxFooTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/linuxFooTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/linuxFooTest.dir/rule
+
+# Convenience name for target.
+linuxFooTest: CMakeFiles/linuxFooTest.dir/rule
+
+.PHONY : linuxFooTest
+
+# clean rule for target.
+CMakeFiles/linuxFooTest.dir/clean:
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/clean
+.PHONY : CMakeFiles/linuxFooTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_UDPclient.dir
+
+# All Build rule for target.
+CMakeFiles/test_UDPclient.dir/all:
+	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/depend
+	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=17,18 "Built target test_UDPclient"
+.PHONY : CMakeFiles/test_UDPclient.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_UDPclient.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_UDPclient.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_UDPclient.dir/rule
+
+# Convenience name for target.
+test_UDPclient: CMakeFiles/test_UDPclient.dir/rule
+
+.PHONY : test_UDPclient
+
+# clean rule for target.
+CMakeFiles/test_UDPclient.dir/clean:
+	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/clean
+.PHONY : CMakeFiles/test_UDPclient.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ifconfig_fun.dir
+
+# All Build rule for target.
+CMakeFiles/ifconfig_fun.dir/all:
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/depend
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=3,4 "Built target ifconfig_fun"
+.PHONY : CMakeFiles/ifconfig_fun.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ifconfig_fun.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ifconfig_fun.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/ifconfig_fun.dir/rule
+
+# Convenience name for target.
+ifconfig_fun: CMakeFiles/ifconfig_fun.dir/rule
+
+.PHONY : ifconfig_fun
+
+# clean rule for target.
+CMakeFiles/ifconfig_fun.dir/clean:
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/clean
+.PHONY : CMakeFiles/ifconfig_fun.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_namespace.dir
+
+# All Build rule for target.
+CMakeFiles/test_namespace.dir/all:
+	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/depend
+	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=25,26 "Built target test_namespace"
+.PHONY : CMakeFiles/test_namespace.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_namespace.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_namespace.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_namespace.dir/rule
+
+# Convenience name for target.
+test_namespace: CMakeFiles/test_namespace.dir/rule
+
+.PHONY : test_namespace
+
+# clean rule for target.
+CMakeFiles/test_namespace.dir/clean:
+	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/clean
+.PHONY : CMakeFiles/test_namespace.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/queuetest.dir
+
+# All Build rule for target.
+CMakeFiles/queuetest.dir/all:
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/depend
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=9,10 "Built target queuetest"
+.PHONY : CMakeFiles/queuetest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/queuetest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/queuetest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/queuetest.dir/rule
+
+# Convenience name for target.
+queuetest: CMakeFiles/queuetest.dir/rule
+
+.PHONY : queuetest
+
+# clean rule for target.
+CMakeFiles/queuetest.dir/clean:
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/clean
+.PHONY : CMakeFiles/queuetest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_String.dir
+
+# All Build rule for target.
+CMakeFiles/test_String.dir/all:
+	$(MAKE) -f CMakeFiles/test_String.dir/build.make CMakeFiles/test_String.dir/depend
+	$(MAKE) -f CMakeFiles/test_String.dir/build.make CMakeFiles/test_String.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=11,12 "Built target test_String"
+.PHONY : CMakeFiles/test_String.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_String.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_String.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_String.dir/rule
+
+# Convenience name for target.
+test_String: CMakeFiles/test_String.dir/rule
+
+.PHONY : test_String
+
+# clean rule for target.
+CMakeFiles/test_String.dir/clean:
+	$(MAKE) -f CMakeFiles/test_String.dir/build.make CMakeFiles/test_String.dir/clean
+.PHONY : CMakeFiles/test_String.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_tmp.dir
+
+# All Build rule for target.
+CMakeFiles/test_tmp.dir/all:
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/depend
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=27,28 "Built target test_tmp"
+.PHONY : CMakeFiles/test_tmp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_tmp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_tmp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_tmp.dir/rule
+
+# Convenience name for target.
+test_tmp: CMakeFiles/test_tmp.dir/rule
+
+.PHONY : test_tmp
+
+# clean rule for target.
+CMakeFiles/test_tmp.dir/clean:
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/clean
+.PHONY : CMakeFiles/test_tmp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_argument_declear.dir
+
+# All Build rule for target.
+CMakeFiles/test_argument_declear.dir/all:
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/depend
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=21,22 "Built target test_argument_declear"
+.PHONY : CMakeFiles/test_argument_declear.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_argument_declear.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_argument_declear.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_argument_declear.dir/rule
+
+# Convenience name for target.
+test_argument_declear: CMakeFiles/test_argument_declear.dir/rule
+
+.PHONY : test_argument_declear
+
+# clean rule for target.
+CMakeFiles/test_argument_declear.dir/clean:
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/clean
+.PHONY : CMakeFiles/test_argument_declear.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_ioctl_fun.dir
+
+# All Build rule for target.
+CMakeFiles/test_ioctl_fun.dir/all:
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/depend
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tang/myproject/tang_test/cTest/build/CMakeFiles --progress-num=23,24 "Built target test_ioctl_fun"
+.PHONY : CMakeFiles/test_ioctl_fun.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_ioctl_fun.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_ioctl_fun.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tang/myproject/tang_test/cTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_ioctl_fun.dir/rule
+
+# Convenience name for target.
+test_ioctl_fun: CMakeFiles/test_ioctl_fun.dir/rule
+
+.PHONY : test_ioctl_fun
+
+# clean rule for target.
+CMakeFiles/test_ioctl_fun.dir/clean:
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/clean
+.PHONY : CMakeFiles/test_ioctl_fun.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -111,121 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test_tmp
+# Target rules for targets named mulit_thread_test
 
 # Build rule for target.
-test_tmp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_tmp
-.PHONY : test_tmp
+mulit_thread_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mulit_thread_test
+.PHONY : mulit_thread_test
 
 # fast build rule for target.
-test_tmp/fast:
-	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/build
-.PHONY : test_tmp/fast
+mulit_thread_test/fast:
+	$(MAKE) -f CMakeFiles/mulit_thread_test.dir/build.make CMakeFiles/mulit_thread_test.dir/build
+.PHONY : mulit_thread_test/fast
 
 #=============================================================================
-# Target rules for targets named ifconfig_fun
+# Target rules for targets named test_TCPserver
 
 # Build rule for target.
-ifconfig_fun: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ifconfig_fun
-.PHONY : ifconfig_fun
+test_TCPserver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_TCPserver
+.PHONY : test_TCPserver
 
 # fast build rule for target.
-ifconfig_fun/fast:
-	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/build
-.PHONY : ifconfig_fun/fast
-
-#=============================================================================
-# Target rules for targets named test_ioctl_fun
-
-# Build rule for target.
-test_ioctl_fun: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_ioctl_fun
-.PHONY : test_ioctl_fun
-
-# fast build rule for target.
-test_ioctl_fun/fast:
-	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/build
-.PHONY : test_ioctl_fun/fast
-
-#=============================================================================
-# Target rules for targets named test_argument_declear
-
-# Build rule for target.
-test_argument_declear: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_argument_declear
-.PHONY : test_argument_declear
-
-# fast build rule for target.
-test_argument_declear/fast:
-	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/build
-.PHONY : test_argument_declear/fast
-
-#=============================================================================
-# Target rules for targets named queuetest
-
-# Build rule for target.
-queuetest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 queuetest
-.PHONY : queuetest
-
-# fast build rule for target.
-queuetest/fast:
-	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/build
-.PHONY : queuetest/fast
-
-#=============================================================================
-# Target rules for targets named test_namespace
-
-# Build rule for target.
-test_namespace: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_namespace
-.PHONY : test_namespace
-
-# fast build rule for target.
-test_namespace/fast:
-	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/build
-.PHONY : test_namespace/fast
-
-#=============================================================================
-# Target rules for targets named test_UDPclient
-
-# Build rule for target.
-test_UDPclient: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_UDPclient
-.PHONY : test_UDPclient
-
-# fast build rule for target.
-test_UDPclient/fast:
-	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/build
-.PHONY : test_UDPclient/fast
-
-#=============================================================================
-# Target rules for targets named linuxFooTest
-
-# Build rule for target.
-linuxFooTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 linuxFooTest
-.PHONY : linuxFooTest
-
-# fast build rule for target.
-linuxFooTest/fast:
-	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/build
-.PHONY : linuxFooTest/fast
-
-#=============================================================================
-# Target rules for targets named test_UDPserver
-
-# Build rule for target.
-test_UDPserver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_UDPserver
-.PHONY : test_UDPserver
-
-# fast build rule for target.
-test_UDPserver/fast:
-	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/build
-.PHONY : test_UDPserver/fast
+test_TCPserver/fast:
+	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/build
+.PHONY : test_TCPserver/fast
 
 #=============================================================================
 # Target rules for targets named test_TCPclient
@@ -241,17 +150,174 @@ test_TCPclient/fast:
 .PHONY : test_TCPclient/fast
 
 #=============================================================================
-# Target rules for targets named test_TCPserver
+# Target rules for targets named condition_test
 
 # Build rule for target.
-test_TCPserver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_TCPserver
-.PHONY : test_TCPserver
+condition_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 condition_test
+.PHONY : condition_test
 
 # fast build rule for target.
-test_TCPserver/fast:
-	$(MAKE) -f CMakeFiles/test_TCPserver.dir/build.make CMakeFiles/test_TCPserver.dir/build
-.PHONY : test_TCPserver/fast
+condition_test/fast:
+	$(MAKE) -f CMakeFiles/condition_test.dir/build.make CMakeFiles/condition_test.dir/build
+.PHONY : condition_test/fast
+
+#=============================================================================
+# Target rules for targets named test_UDPserver
+
+# Build rule for target.
+test_UDPserver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_UDPserver
+.PHONY : test_UDPserver
+
+# fast build rule for target.
+test_UDPserver/fast:
+	$(MAKE) -f CMakeFiles/test_UDPserver.dir/build.make CMakeFiles/test_UDPserver.dir/build
+.PHONY : test_UDPserver/fast
+
+#=============================================================================
+# Target rules for targets named linuxFooTest
+
+# Build rule for target.
+linuxFooTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 linuxFooTest
+.PHONY : linuxFooTest
+
+# fast build rule for target.
+linuxFooTest/fast:
+	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/build
+.PHONY : linuxFooTest/fast
+
+#=============================================================================
+# Target rules for targets named test_UDPclient
+
+# Build rule for target.
+test_UDPclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_UDPclient
+.PHONY : test_UDPclient
+
+# fast build rule for target.
+test_UDPclient/fast:
+	$(MAKE) -f CMakeFiles/test_UDPclient.dir/build.make CMakeFiles/test_UDPclient.dir/build
+.PHONY : test_UDPclient/fast
+
+#=============================================================================
+# Target rules for targets named ifconfig_fun
+
+# Build rule for target.
+ifconfig_fun: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ifconfig_fun
+.PHONY : ifconfig_fun
+
+# fast build rule for target.
+ifconfig_fun/fast:
+	$(MAKE) -f CMakeFiles/ifconfig_fun.dir/build.make CMakeFiles/ifconfig_fun.dir/build
+.PHONY : ifconfig_fun/fast
+
+#=============================================================================
+# Target rules for targets named test_namespace
+
+# Build rule for target.
+test_namespace: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_namespace
+.PHONY : test_namespace
+
+# fast build rule for target.
+test_namespace/fast:
+	$(MAKE) -f CMakeFiles/test_namespace.dir/build.make CMakeFiles/test_namespace.dir/build
+.PHONY : test_namespace/fast
+
+#=============================================================================
+# Target rules for targets named queuetest
+
+# Build rule for target.
+queuetest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 queuetest
+.PHONY : queuetest
+
+# fast build rule for target.
+queuetest/fast:
+	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/build
+.PHONY : queuetest/fast
+
+#=============================================================================
+# Target rules for targets named test_String
+
+# Build rule for target.
+test_String: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_String
+.PHONY : test_String
+
+# fast build rule for target.
+test_String/fast:
+	$(MAKE) -f CMakeFiles/test_String.dir/build.make CMakeFiles/test_String.dir/build
+.PHONY : test_String/fast
+
+#=============================================================================
+# Target rules for targets named test_tmp
+
+# Build rule for target.
+test_tmp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_tmp
+.PHONY : test_tmp
+
+# fast build rule for target.
+test_tmp/fast:
+	$(MAKE) -f CMakeFiles/test_tmp.dir/build.make CMakeFiles/test_tmp.dir/build
+.PHONY : test_tmp/fast
+
+#=============================================================================
+# Target rules for targets named test_argument_declear
+
+# Build rule for target.
+test_argument_declear: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_argument_declear
+.PHONY : test_argument_declear
+
+# fast build rule for target.
+test_argument_declear/fast:
+	$(MAKE) -f CMakeFiles/test_argument_declear.dir/build.make CMakeFiles/test_argument_declear.dir/build
+.PHONY : test_argument_declear/fast
+
+#=============================================================================
+# Target rules for targets named test_ioctl_fun
+
+# Build rule for target.
+test_ioctl_fun: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_ioctl_fun
+.PHONY : test_ioctl_fun
+
+# fast build rule for target.
+test_ioctl_fun/fast:
+	$(MAKE) -f CMakeFiles/test_ioctl_fun.dir/build.make CMakeFiles/test_ioctl_fun.dir/build
+.PHONY : test_ioctl_fun/fast
+
+condition_test.o: condition_test.cc.o
+
+.PHONY : condition_test.o
+
+# target to build an object file
+condition_test.cc.o:
+	$(MAKE) -f CMakeFiles/condition_test.dir/build.make CMakeFiles/condition_test.dir/condition_test.cc.o
+.PHONY : condition_test.cc.o
+
+condition_test.i: condition_test.cc.i
+
+.PHONY : condition_test.i
+
+# target to preprocess a source file
+condition_test.cc.i:
+	$(MAKE) -f CMakeFiles/condition_test.dir/build.make CMakeFiles/condition_test.dir/condition_test.cc.i
+.PHONY : condition_test.cc.i
+
+condition_test.s: condition_test.cc.s
+
+.PHONY : condition_test.s
+
+# target to generate assembly for a file
+condition_test.cc.s:
+	$(MAKE) -f CMakeFiles/condition_test.dir/build.make CMakeFiles/condition_test.dir/condition_test.cc.s
+.PHONY : condition_test.cc.s
 
 ifconfig_fun.o: ifconfig_fun.cpp.o
 
@@ -307,6 +373,33 @@ linuxFooTest.cpp.s:
 	$(MAKE) -f CMakeFiles/linuxFooTest.dir/build.make CMakeFiles/linuxFooTest.dir/linuxFooTest.cpp.s
 .PHONY : linuxFooTest.cpp.s
 
+mulit_thread_test.o: mulit_thread_test.cpp.o
+
+.PHONY : mulit_thread_test.o
+
+# target to build an object file
+mulit_thread_test.cpp.o:
+	$(MAKE) -f CMakeFiles/mulit_thread_test.dir/build.make CMakeFiles/mulit_thread_test.dir/mulit_thread_test.cpp.o
+.PHONY : mulit_thread_test.cpp.o
+
+mulit_thread_test.i: mulit_thread_test.cpp.i
+
+.PHONY : mulit_thread_test.i
+
+# target to preprocess a source file
+mulit_thread_test.cpp.i:
+	$(MAKE) -f CMakeFiles/mulit_thread_test.dir/build.make CMakeFiles/mulit_thread_test.dir/mulit_thread_test.cpp.i
+.PHONY : mulit_thread_test.cpp.i
+
+mulit_thread_test.s: mulit_thread_test.cpp.s
+
+.PHONY : mulit_thread_test.s
+
+# target to generate assembly for a file
+mulit_thread_test.cpp.s:
+	$(MAKE) -f CMakeFiles/mulit_thread_test.dir/build.make CMakeFiles/mulit_thread_test.dir/mulit_thread_test.cpp.s
+.PHONY : mulit_thread_test.cpp.s
+
 queuetest.o: queuetest.cpp.o
 
 .PHONY : queuetest.o
@@ -333,6 +426,33 @@ queuetest.s: queuetest.cpp.s
 queuetest.cpp.s:
 	$(MAKE) -f CMakeFiles/queuetest.dir/build.make CMakeFiles/queuetest.dir/queuetest.cpp.s
 .PHONY : queuetest.cpp.s
+
+test_String.o: test_String.cc.o
+
+.PHONY : test_String.o
+
+# target to build an object file
+test_String.cc.o:
+	$(MAKE) -f CMakeFiles/test_String.dir/build.make CMakeFiles/test_String.dir/test_String.cc.o
+.PHONY : test_String.cc.o
+
+test_String.i: test_String.cc.i
+
+.PHONY : test_String.i
+
+# target to preprocess a source file
+test_String.cc.i:
+	$(MAKE) -f CMakeFiles/test_String.dir/build.make CMakeFiles/test_String.dir/test_String.cc.i
+.PHONY : test_String.cc.i
+
+test_String.s: test_String.cc.s
+
+.PHONY : test_String.s
+
+# target to generate assembly for a file
+test_String.cc.s:
+	$(MAKE) -f CMakeFiles/test_String.dir/build.make CMakeFiles/test_String.dir/test_String.cc.s
+.PHONY : test_String.cc.s
 
 test_TCPclient.o: test_TCPclient.cpp.o
 
@@ -556,28 +676,40 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... mulit_thread_test"
+	@echo "... test_TCPserver"
+	@echo "... test_TCPclient"
+	@echo "... condition_test"
+	@echo "... test_UDPserver"
+	@echo "... linuxFooTest"
+	@echo "... test_UDPclient"
+	@echo "... ifconfig_fun"
+	@echo "... test_namespace"
+	@echo "... queuetest"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test_String"
 	@echo "... test_tmp"
-	@echo "... ifconfig_fun"
-	@echo "... test_ioctl_fun"
 	@echo "... test_argument_declear"
-	@echo "... queuetest"
-	@echo "... test_namespace"
-	@echo "... test_UDPclient"
-	@echo "... linuxFooTest"
-	@echo "... test_UDPserver"
-	@echo "... test_TCPclient"
-	@echo "... test_TCPserver"
+	@echo "... test_ioctl_fun"
+	@echo "... condition_test.o"
+	@echo "... condition_test.i"
+	@echo "... condition_test.s"
 	@echo "... ifconfig_fun.o"
 	@echo "... ifconfig_fun.i"
 	@echo "... ifconfig_fun.s"
 	@echo "... linuxFooTest.o"
 	@echo "... linuxFooTest.i"
 	@echo "... linuxFooTest.s"
+	@echo "... mulit_thread_test.o"
+	@echo "... mulit_thread_test.i"
+	@echo "... mulit_thread_test.s"
 	@echo "... queuetest.o"
 	@echo "... queuetest.i"
 	@echo "... queuetest.s"
+	@echo "... test_String.o"
+	@echo "... test_String.i"
+	@echo "... test_String.s"
 	@echo "... test_TCPclient.o"
 	@echo "... test_TCPclient.i"
 	@echo "... test_TCPclient.s"

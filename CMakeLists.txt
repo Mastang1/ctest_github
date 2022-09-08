@@ -42,7 +42,7 @@ add_executable(test_TCPclient test_TCPclient.cpp )
 
 add_executable(test_UDPserver test_UDPserver.cpp )
 add_executable(test_UDPclient test_UDPclient.cpp )
-
+add_executable(test_String test_String.cc)
 
 add_executable(test_namespace test_namespace.cpp)
 add_executable(linuxFooTest linuxFooTest.cpp)
@@ -52,6 +52,13 @@ add_executable(test_ioctl_fun test_ioctl_fun.cpp)
 add_executable(ifconfig_fun ifconfig_fun.cpp)
 add_executable(test_tmp test_tmp.cpp)
 target_link_libraries(test_tmp ${CMAKE_THREAD_LIBS_INIT})
+
+add_executable(condition_test condition_test.cc)
+target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
+
+add_executable(mulit_thread_test mulit_thread_test.cpp)
+target_link_libraries(mulit_thread_test ${CMAKE_THREAD_LIBS_INIT})
+
 # -------------------------------------------------
 
 
