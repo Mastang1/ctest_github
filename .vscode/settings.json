@@ -3,6 +3,9 @@
         "functional": "cpp",
         "cstdio": "cpp",
         "iostream": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "string": "cpp",
+        "map": "cpp",
+        "iosfwd": "cpp"
     }
 }

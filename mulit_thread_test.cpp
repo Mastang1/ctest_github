@@ -1,44 +1,59 @@
+//别的线程在dk，此时试图加锁的线只能等待……
 #include <stdio.h>
 #include <pthread.h>
-//定义线程要执行的函数，arg 为接收线程传递过来的数据
-void* Thread1(void* arg)
-{
-    printf("thread1\n");
-    return (void*)"Thread1成功执行";
-}
-//定义线程要执行的函数，arg 为接收线程传递过来的数据
-void* Thread2(void* arg)
-{
-    printf("thread2\n");
-    return (void*)"Thread2成功执行";
-}
+#include <sched.h>
+#include <unistd.h>
 
-int main()
+void *fun1(void *arg);
+void *fun2(void *arg);
+
+int buffer = 0;
+pthread_mutex_t mutex;
+int running = 1;
+
+int main(void )
 {
-    int res;
-    //创建两个线程变量 
-    pthread_t mythread1, mythread2;
-    void* thread_result;
-    //创建 mythread1 线程，执行 Thread1() 函数
-    res = pthread_create(&mythread1, NULL, Thread1, NULL);
-    if (res != 0) {
-        printf("线程创建失败");
-        return 0;
-    }
-    //创建 mythread2 线程，执行 Thread2() 函数
-    res = pthread_create(&mythread2, NULL, Thread2, NULL);
-    if (res != 0) {
-        printf("线程创建失败");
-        return 0;
-    }
-    //阻塞主线程，直至 mythread1 线程执行结束，用 thread_result 指向接收到的返回值，阻塞状态才消除。
-    res = pthread_join(mythread1, &thread_result);
-    //输出线程执行完毕后返回的数据
-    printf("%s\n", (char*)thread_result);
-    //阻塞主线程，直至 mythread2 线程执行结束，用 thread_result 指向接收到的返回值，阻塞状态才消除。
-    res = pthread_join(mythread2, &thread_result);
-    printf("%s\n", (char*)thread_result);
-    printf("主线程执行完毕");
+    pthread_t pt1;
+    pthread_t pt2;
+
+    pthread_mutex_init(&mutex,NULL);
+
+    pthread_create(&pt1,NULL,fun1,(void*)&running);
+    pthread_create(&pt2,NULL,fun2,(void*)&running);
+
+    usleep(1000);
+    running=0;
+    pthread_join(pt1,NULL);
+    pthread_join(pt2,NULL);
+    pthread_mutex_destroy(&mutex);
     return 0;
 }
 
+void *fun1(void *arg)
+{
+    while(*(int *)arg)
+    {
+				pthread_mutex_lock(&mutex);
+        printf("in fun1 before add , buffer is : %d\n",buffer);
+        usleep(2);
+        buffer++;
+        printf("in fun1 after sleep and add one ,now buffer is %d \n",buffer);
+				pthread_mutex_unlock(&mutex);
+        usleep(2);
+    }
+}
+
+void *fun2(void *arg)
+{
+    while(*(int *)arg)
+    {
+				pthread_mutex_lock(&mutex);
+        printf("in fun2 before add , buffer is : %d\n",buffer);
+        usleep(2);
+        buffer++;
+        printf("in fun2 after sleep and add one ,now buffer is %d \n",buffer);
+				pthread_mutex_unlock(&mutex);
+        usleep(2);
+    }
+
+}

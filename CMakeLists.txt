@@ -34,9 +34,13 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR/src})
 
 find_package(Threads)
 
+add_executable(test_fork test_fork.cpp)
+
+add_executable(dp_test dp_test.cpp)
 add_executable(test_TCPserver test_TCPserver.cpp )
 add_executable(test_TCPclient test_TCPclient.cpp )
 
@@ -58,6 +62,10 @@ target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
 
 add_executable(mulit_thread_test mulit_thread_test.cpp)
 target_link_libraries(mulit_thread_test ${CMAKE_THREAD_LIBS_INIT})
+
+
+# add_executable(Semaphore_test Semaphore_test.cpp)
+# target_link_libraries(Semaphore_test ${CMAKE_THREAD_LIBS_INIT})
 
 # -------------------------------------------------
 
