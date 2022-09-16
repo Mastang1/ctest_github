@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/mulit_thread_test.dir/mulit_thread_test.cpp.o  -o bin/mulit_thread_test  -lpthread 

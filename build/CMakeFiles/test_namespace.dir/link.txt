@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/test_namespace.dir/test_namespace.cpp.o  -o bin/test_namespace 

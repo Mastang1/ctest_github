@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/linuxFooTest.dir/linuxFooTest.cpp.o  -o bin/linuxFooTest 
