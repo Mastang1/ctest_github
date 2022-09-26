@@ -34,7 +34,7 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR/src})
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 find_package(Threads)
 
@@ -54,8 +54,7 @@ add_executable(test_argument_declear test_argument_declear.cpp)
 add_executable(queuetest queuetest.cpp)
 add_executable(test_ioctl_fun test_ioctl_fun.cpp)
 add_executable(ifconfig_fun ifconfig_fun.cpp)
-add_executable(test_tmp test_tmp.cpp)
-target_link_libraries(test_tmp ${CMAKE_THREAD_LIBS_INIT})
+add_executable(test_tmp test_tmp.cpp )
 
 add_executable(condition_test condition_test.cc)
 target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
