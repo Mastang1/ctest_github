@@ -6,6 +6,7 @@
         "thread": "cpp",
         "string": "cpp",
         "map": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "cstdint": "cpp"
     }
 }

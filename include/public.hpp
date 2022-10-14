@@ -1,3 +1,6 @@
+#ifndef __PUBLIC_HPP__
+#define __PUBLIC_HPP__
+
 #include <stdio.h>
 #include <iostream>
 #include <string>
@@ -19,3 +22,5 @@ Mypublic::Mypublic(/* args */)
 Mypublic::~Mypublic()
 {
 }
+
+#endif
