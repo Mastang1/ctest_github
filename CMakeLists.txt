@@ -8,11 +8,12 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 # version info
 #2.1.10 add app switch >=2.1.10 app switch is work
-set(${PROJECT_NAME}_VERSION_MAJOR 2)
-set(${PROJECT_NAME}_VERSION_MINOR 5)
-set(${PROJECT_NAME}_VERSION_PATCH 7)
+set(${PROJECT_NAME}_VERSION_MAJOR 1)
+set(${PROJECT_NAME}_VERSION_MINOR 0)
+set(${PROJECT_NAME}_VERSION_PATCH 0)
 
- 
+#* * * * * * * * * * * * * * * * * * * * * * * * *
+#* * *   测试宏
 macro(arg_test para1 para2)
         MESSAGE(STATUS ARGC=${ARGC})
         MESSAGE(STATUS ARGV=${ARGV})
@@ -22,7 +23,14 @@ macro(arg_test para1 para2)
         MESSAGE(STATUS ARGV2=${ARGV2})
 endmacro()
  
-arg_test(para_1, para_2,para_3,para_4,retr,eeee)
+set(arg_1 1)
+set(arg_2 2)
+set(arg_3 3)
+#* * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+arg_test(${arg_1}, ${arg_2}, ${arg_3})
 #set compiler
 set (CMAKE_CXX_STANDARD 11)
 #推荐在终端中，执行cmake前，执行该操作
@@ -54,7 +62,7 @@ find_package(Threads)
 
 add_executable(test_fork test_fork.cpp)
 
-add_executable(dp_test dp_test.cpp)
+add_executable(two_pointers two_pointers.cpp)
 add_executable(test_TCPserver test_TCPserver.cpp )
 add_executable(test_TCPclient test_TCPclient.cpp )
 
@@ -69,6 +77,8 @@ add_executable(queuetest queuetest.cpp)
 add_executable(test_ioctl_fun test_ioctl_fun.cpp)
 add_executable(ifconfig_fun ifconfig_fun.cpp)
 add_executable(test_tmp test_tmp.cpp )
+add_executable(test_macro test_macro.cpp)
+add_executable(linux_system_test linux_system_test.cpp)
 
 add_executable(condition_test condition_test.cc)
 target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
@@ -92,7 +102,8 @@ LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 PDB_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang")
 
-add_executable(factory_interface factory_interface.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
+add_executable(variable_length_paraments variable_length_paraments.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
+add_subdirectory(cpp_test)
 # add_executable(Semaphore_test Semaphore_test.cpp)
 # target_link_libraries(Semaphore_test ${CMAKE_THREAD_LIBS_INIT})
 

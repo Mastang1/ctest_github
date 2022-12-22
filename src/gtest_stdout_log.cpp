@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
+#include <iostream>
+
+using namespace std;
 
 namespace testing{
 gtest_log * gtest_log::m_gtest_log = 0;
@@ -23,9 +26,10 @@ int gtest_log::log(const char *pchFmt, ...)
     va_list arg;                           
     va_start (arg, pchFmt);                 
     i=vsnprintf(str_tmp, MAX_LENGTH_OF_LOG, pchFmt, arg);  //success count ，failed -
-    va_end(arg);                            
+                               
 
-    printf("%s", str_tmp); 
+    printf("%s", str_tmp);
+    va_end(arg); 
     return i;
 }
 

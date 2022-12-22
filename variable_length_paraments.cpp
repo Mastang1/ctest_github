@@ -65,7 +65,7 @@ int main()
 int main()
 {   
     //testing::gtest_log::instance()->log("%d",123);
-    GTEST_INFO("%s","today is a nice day");
+    GTEST_INFO("name:%s;\nsex:%s;\nage:%d.","TangYapeng","male", 31);
     return 0;
 }
 #endif 

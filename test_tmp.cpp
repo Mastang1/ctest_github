@@ -1,32 +1,52 @@
-#include "stdio.h"
 #include <iostream>
-
+#include <string>
+#include <vector>
+#include <cmath>
+#include <algorithm>
 using namespace std;
 
-
-class base
+int main(int argc, char *argv[])
 {
-public:
-    void display()
-    {
-        printf("\n***** this base class *****\n");
-    }
-};
+	string StrToTest("Tesla");
+	string StrAfterCopy;//拷贝构造
+	cout<<"StrAfterCopy : "<<StrAfterCopy<<endl;
 
-class child : public base
-{
-public:
-    void test()
-    {
-        base::display();
-    }
-    //nothing
-};
+	cout<<"StrToTest : "<<StrToTest<<endl;
 
-int main()
-{
-    child son;
-    son.test();
+	/*    string insert test      front insert*/
+	StrToTest.insert(0, "Nikola ");
+	cout<<"字符串插入操作：  "<<StrToTest<<endl;
 
-    return 1;
+	/* * *     通过迭代器遍历       * * */
+	for(string::iterator it = StrToTest.begin(); it != StrToTest.end(); it++){
+		StrAfterCopy.push_back(*it);
+	}
+	cout<<"StrAfterCopy: "<<StrAfterCopy<<endl;
+
+	/************** 字符查找 no return -1******************/
+	cout<<"found result is : "<<StrToTest.find('a')<<endl;
+	cout<<"found from position 7: "<<StrToTest.find('a',7)<<endl;
+
+	/************  末尾开始查找   *********************/
+	cout<<"found from tail 2: "<<StrToTest.rfind('a')<<endl;
+	// cout<<"found from tail 0: "<<StrToTest.rfind('a', 3)<<endl;  //不可用
+
+	/*********** 查找另一个串中包含 或者 不包含的字符  ********/
+	string str_tmp("Typ");
+	cout<<"find_first_of: "<<StrToTest.find_first_of(str_tmp)<<endl;
+	
+	cout<<"find_first_not_of: "<<StrToTest.find_first_not_of("Nikolp")<<endl;  //5 which is 'p'
+
+	/********* 排序  need include algorithm *********************/
+	string StrToSort("49286157tndlas");
+	sort(StrToSort.begin(),StrToSort.end());
+	cout<<"after sort : "<<StrToSort<<endl;
+
+	/*******  分割子串**************/
+	string str_base("name: Nikola Tesla");
+	int position_name = str_base.find(':');
+	string str_name = str_base.substr(position_name+1);//截取位置会包含当前position; 2个参数， position and the length of string
+
+	cout<<"splid name is :"<< str_name << endl;
+	return 0;
 }

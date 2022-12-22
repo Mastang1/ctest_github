@@ -46,7 +46,7 @@ int  main()
 
 
 //#####################################################################
-#if 0
+#if 1
 #include <stdio.h>
 
 #define GTEST_STRINGIFY_HELPER_(name) #name
@@ -65,19 +65,19 @@ int  main(void)
 
     
 //#####################################################################还需要增加gtest中的一个大宏，解析一下
-#if 1
+#if 0
 #include <stdio.h>
 
 
 //简单说明：#name用于实现name转换为“name”
 //(...)表示以一系列的参数，后边可以用args来引用
 //
-#define GTEST_STRINGIFY_HELPER_(name, ...) #name            //转字符串
+#define GTEST_STRINGIFY_HELPER_(name, ...) #name
 #define GTEST_STRINGIFY_(...) GTEST_STRINGIFY_HELPER_(__VA_ARGS__, )
 //定义类名称标识符
 #define GTEST_TEST_CLASS_NAME_(test_suite_name, test_name) \
     test_suite_name##_##test_name
-//定义对象标识符                拼接
+//定义对象标识符
 #define ENTITY_TEST_CLASS_NAME(test_suite_name, test_name) \
     entity##test_suite_name##_##test_name
 
