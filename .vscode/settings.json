@@ -9,6 +9,8 @@
         "iosfwd": "cpp",
         "cstdint": "cpp",
         "cmath": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "chrono": "cpp",
+        "ctime": "cpp"
     }
 }

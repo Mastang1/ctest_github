@@ -98,13 +98,14 @@ int main(void) {
 condition mutex queue
 * **************************************************************
 */
-
+#include <iostream>
 #include <pthread.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include "os_adapter.hpp"
-
+#include <sys/types.h>
+using namespace std;
 
 Event event_1to2;
 Event event_2to3;
@@ -168,7 +169,34 @@ int main(void) {
     abort();
   } 
 
-//*************发送信号，使两个线程退出
+/**
+ * @brief ************ test current thread ID 
+ * 
+ */
+  
+    char tmp_strID[20];
+    sprintf(tmp_strID, "%d", (int32_t)gettid());
+    printf("\n%s\n\n", tmp_strID);
+sleep(6);
+    string str_ps_cmd;
+    str_ps_cmd.append("ps -ef |grep ");
+    str_ps_cmd.append(tmp_strID);
+    
+
+    cout<<str_ps_cmd<<endl;
+    
+
+    int rslt = 0;
+    rslt = system(str_ps_cmd.c_str());      //可以返回当前进行工作目录下的项目个数
+    printf("return value is : %s", rslt);
+
+  sleep(60);
+
+
+
+
+
+
 
 
   //线程自动退出
@@ -196,3 +224,4 @@ pthread_join(pthread_t x, NULL);    return 0; successful
 */
 
 #endif
+

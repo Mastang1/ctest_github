@@ -59,8 +59,9 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 
 find_package(Threads)
 
-
+add_executable(test_linux_timeFun test_linux_timeFun.cpp)
 add_executable(test_fork test_fork.cpp)
+add_executable(test_cpp_io_string test_cpp_io_string.cpp)
 
 add_executable(two_pointers two_pointers.cpp)
 add_executable(test_TCPserver test_TCPserver.cpp )
@@ -78,13 +79,18 @@ add_executable(test_ioctl_fun test_ioctl_fun.cpp)
 add_executable(ifconfig_fun ifconfig_fun.cpp)
 add_executable(test_tmp test_tmp.cpp )
 add_executable(test_macro test_macro.cpp)
-add_executable(linux_system_test linux_system_test.cpp)
+add_executable(linux_sys_fun_test linux_sys_fun_test.cpp)
 
 add_executable(condition_test condition_test.cc)
 target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
 
 add_executable(mulit_thread_test mulit_thread_test.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/os_adapter.cpp)
 target_link_libraries(mulit_thread_test ${CMAKE_THREAD_LIBS_INIT})
+
+add_executable(get_threadID_from_processID get_threadID_from_processID.cpp)
+target_link_libraries(get_threadID_from_processID ${CMAKE_THREAD_LIBS_INIT})
+
+
 
 #=================================================================
 LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/lib_curl/lib)
@@ -101,9 +107,13 @@ RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 PDB_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang")
+#- -- - ----------------------------------------------------------
+
+
 
 add_executable(variable_length_paraments variable_length_paraments.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
 add_subdirectory(cpp_test)
+add_subdirectory(network_test)
 # add_executable(Semaphore_test Semaphore_test.cpp)
 # target_link_libraries(Semaphore_test ${CMAKE_THREAD_LIBS_INIT})
 
