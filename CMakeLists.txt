@@ -62,6 +62,11 @@ find_package(Threads)
 add_executable(test_linux_timeFun test_linux_timeFun.cpp)
 add_executable(test_fork test_fork.cpp)
 add_executable(test_cpp_io_string test_cpp_io_string.cpp)
+add_executable(test_container test_container.cpp)
+add_executable(test_printf_multi_char test_printf_multi_char.cpp)
+add_executable(test_regex test_regex.cpp)
+
+add_executable(test_linux_path_function test_linux_path_function.cpp)
 
 add_executable(two_pointers two_pointers.cpp)
 add_executable(test_TCPserver test_TCPserver.cpp )

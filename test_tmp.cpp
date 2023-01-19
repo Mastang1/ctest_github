@@ -1,3 +1,5 @@
+
+#if 0
 #include <iostream>
 #include <string>
 #include <vector>
@@ -50,3 +52,45 @@ int main(int argc, char *argv[])
 	cout<<"splid name is :"<< str_name << endl;
 	return 0;
 }
+
+#endif
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+// 	if (2 && strncmp("bd", "nice", 1)) {
+// 		printf("\n -- result is true. \n");
+// 	}else{
+// 		printf("\n -- result is false. \n");	
+// 	}
+// 	return 0;
+// }
+
+
+#if 0
+/**
+ * @file test_tmp.cpp
+ * @author your name (you@domain.com)
+ * @brief C not zero ,mean true
+ * @version 0.1
+ * @date 2023-01-19
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	if (2 && -4) {
+		printf("\n -- result is true. \n");
+	}else{
+		printf("\n -- result is false. \n");	
+	}
+	return 0;
+}
+
+#endif

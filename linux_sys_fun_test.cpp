@@ -48,7 +48,7 @@ int main(int argc ,char **argv)
 		perror("becasue");
 	    }
     }else{
-        cout<<"new directory is saved!"<<endl;
+        cout<<"new directory is exist!"<<endl;
     }
 
     if(chdir("./tang_bin") == -1) cout<<"\n -- change directory failed!!!\n";

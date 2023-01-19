@@ -11,6 +11,12 @@
         "cmath": "cpp",
         "*.tcc": "cpp",
         "chrono": "cpp",
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "regex": "cpp"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#4e4901",
+        "titleBar.activeBackground": "#0D493B",
+        "titleBar.activeForeground": "#F0FCFA"
     }
 }
