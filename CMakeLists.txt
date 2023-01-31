@@ -59,6 +59,7 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 
 find_package(Threads)
 
+add_executable(test_rand_foo test_rand_foo.cpp)
 add_executable(test_linux_timeFun test_linux_timeFun.cpp)
 add_executable(test_fork test_fork.cpp)
 add_executable(test_cpp_io_string test_cpp_io_string.cpp)
@@ -82,7 +83,7 @@ add_executable(linuxFooTest linuxFooTest.cpp)
 add_executable(queuetest queuetest.cpp)
 add_executable(test_ioctl_fun test_ioctl_fun.cpp)
 add_executable(ifconfig_fun ifconfig_fun.cpp)
-add_executable(test_tmp test_tmp.cpp )
+add_executable(string_proc string_proc.cpp )
 add_executable(test_macro test_macro.cpp)
 add_executable(linux_sys_fun_test linux_sys_fun_test.cpp)
 
