@@ -13,9 +13,10 @@ int main ()
 
   /* generate secret number between 1 and 10: */
   iSecret = rand() % 13 + 1;
+  printf("\nThe data is : %d\n", iSecret);
 
   do {
-    printf ("Guess the number (1 to 10): ");
+    printf ("Guess the number (1 to JQK): ");
     scanf ("%d",&iGuess);
     if (iSecret<iGuess) puts ("The secret number is lower");
     else if (iSecret>iGuess) puts ("The secret number is higher");
