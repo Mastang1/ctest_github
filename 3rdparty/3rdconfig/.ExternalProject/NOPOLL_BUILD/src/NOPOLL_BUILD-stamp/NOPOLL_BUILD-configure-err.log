@@ -1,0 +1,108 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "zh_CN:zh:en_US:en",
+	LC_ALL = (unset),
+	LC_ADDRESS = "zh_CN.UTF-8",
+	LC_NAME = "zh_CN.UTF-8",
+	LC_MONETARY = "zh_CN.UTF-8",
+	LC_PAPER = "zh_CN.UTF-8",
+	LC_IDENTIFICATION = "zh_CN.UTF-8",
+	LC_TELEPHONE = "zh_CN.UTF-8",
+	LC_MEASUREMENT = "zh_CN.UTF-8",
+	LC_TIME = "zh_CN.UTF-8",
+	LC_NUMERIC = "zh_CN.UTF-8",
+	LANG = "zh_CN.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "zh_CN:zh:en_US:en",
+	LC_ALL = (unset),
+	LC_ADDRESS = "zh_CN.UTF-8",
+	LC_NAME = "zh_CN.UTF-8",
+	LC_MONETARY = "zh_CN.UTF-8",
+	LC_PAPER = "zh_CN.UTF-8",
+	LC_IDENTIFICATION = "zh_CN.UTF-8",
+	LC_TELEPHONE = "zh_CN.UTF-8",
+	LC_MEASUREMENT = "zh_CN.UTF-8",
+	LC_TIME = "zh_CN.UTF-8",
+	LC_NUMERIC = "zh_CN.UTF-8",
+	LANG = "zh_CN.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "zh_CN:zh:en_US:en",
+	LC_ALL = (unset),
+	LC_ADDRESS = "zh_CN.UTF-8",
+	LC_NAME = "zh_CN.UTF-8",
+	LC_MONETARY = "zh_CN.UTF-8",
+	LC_PAPER = "zh_CN.UTF-8",
+	LC_IDENTIFICATION = "zh_CN.UTF-8",
+	LC_TELEPHONE = "zh_CN.UTF-8",
+	LC_MEASUREMENT = "zh_CN.UTF-8",
+	LC_TIME = "zh_CN.UTF-8",
+	LC_NUMERIC = "zh_CN.UTF-8",
+	LANG = "zh_CN.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "zh_CN:zh:en_US:en",
+	LC_ALL = (unset),
+	LC_ADDRESS = "zh_CN.UTF-8",
+	LC_NAME = "zh_CN.UTF-8",
+	LC_MONETARY = "zh_CN.UTF-8",
+	LC_PAPER = "zh_CN.UTF-8",
+	LC_IDENTIFICATION = "zh_CN.UTF-8",
+	LC_TELEPHONE = "zh_CN.UTF-8",
+	LC_MEASUREMENT = "zh_CN.UTF-8",
+	LC_TIME = "zh_CN.UTF-8",
+	LC_NUMERIC = "zh_CN.UTF-8",
+	LANG = "zh_CN.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "zh_CN:zh:en_US:en",
+	LC_ALL = (unset),
+	LC_ADDRESS = "zh_CN.UTF-8",
+	LC_NAME = "zh_CN.UTF-8",
+	LC_MONETARY = "zh_CN.UTF-8",
+	LC_PAPER = "zh_CN.UTF-8",
+	LC_IDENTIFICATION = "zh_CN.UTF-8",
+	LC_TELEPHONE = "zh_CN.UTF-8",
+	LC_MEASUREMENT = "zh_CN.UTF-8",
+	LC_TIME = "zh_CN.UTF-8",
+	LC_NUMERIC = "zh_CN.UTF-8",
+	LANG = "zh_CN.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "zh_CN:zh:en_US:en",
+	LC_ALL = (unset),
+	LC_ADDRESS = "zh_CN.UTF-8",
+	LC_NAME = "zh_CN.UTF-8",
+	LC_MONETARY = "zh_CN.UTF-8",
+	LC_PAPER = "zh_CN.UTF-8",
+	LC_IDENTIFICATION = "zh_CN.UTF-8",
+	LC_TELEPHONE = "zh_CN.UTF-8",
+	LC_MEASUREMENT = "zh_CN.UTF-8",
+	LC_TIME = "zh_CN.UTF-8",
+	LC_NUMERIC = "zh_CN.UTF-8",
+	LANG = "zh_CN.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/\${ <-- HERE ([^ \t=:+{}]+)}/ at /home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/x86_64-oesdk-linux/usr/bin/automake line 3939.
+configure.ac:48: installing './compile'
+configure.ac:43: installing './missing'
+src/Makefile.am: installing './depcomp'
+configure: WARNING: using cross tools not prefixed with host triplet
+aarch64-poky-linux-ld: unrecognised emulation mode: elf_x86_64
+Supported emulations: aarch64linux aarch64elf aarch64elf32 aarch64elf32b aarch64elfb armelf armelfb aarch64linuxb aarch64linux32 aarch64linux32b armelfb_linux_eabi armelf_linux_eabi
+configure: WARNING: unrecognized options: --with-ssl, --disable-extra-programs
+configure: WARNING: using cross tools not prefixed with host triplet
+aarch64-poky-linux-ld: unrecognised emulation mode: elf_x86_64
+Supported emulations: aarch64linux aarch64elf aarch64elf32 aarch64elf32b aarch64elfb armelf armelfb aarch64linuxb aarch64linux32 aarch64linux32b armelfb_linux_eabi armelf_linux_eabi
+configure: WARNING: unrecognized options: --with-ssl, --disable-extra-programs

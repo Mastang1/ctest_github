@@ -1,0 +1,23 @@
+aarch64-poky-linux-ar: `u' modifier ignored since `D' is the default (see `U')
+nopoll-regression-listener.o: In function `ssl_context_creator':
+/home/tang/.myproject.//tang_testsrc//cTest./libs3rdparty//libnopoll.anopoll_repository(/nopoll_conn.otest)/:nopoll -Inregression -function `__nopoll_conn_get_ssl_context':
+/home/tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/src/nopoll_conn.c:664: undefined reference to `TLS_client_method'
+/home/tang/myproject/tang_test/cTestlistener.c/:3rdparty354/:nopoll_repository /undefinedsrc /referencenopoll_conn.c :to664 :` TLS_server_methodundefined' 
+reference/ hometo/ tang`/TLS_server_methodmyproject'/
+tang_test./.cTest//src3rdparty//.nopoll_repositorylibs//testlibnopoll.a/(nopollnopoll_conn.o-)regression:- listener.cIn: 346function:  `undefinednopoll_conn_produce_accept_key 'reference: 
+to/ home`/TLS_client_methodtang'/
+myproject./.tang_test//srccTest//.3rdpartylibs//nopoll_repositorylibnopoll.a/(srcnopoll_conn.o/)nopoll_conn.c:: 2591In:  functionundefined  `reference__nopoll_conn_get_ssl_context 'to: 
+`/EVP_MD_CTX_newhome'/
+tang//homemyproject//tangtang_test//myprojectcTest//tang_test3rdparty//cTestnopoll_repository//3rdpartysrc//nopoll_repositorynopoll_conn.c/:src664/:nopoll_conn.c :undefined2595 :reference  undefinedto  reference` TLS_client_methodto' 
+`/EVP_MD_CTX_freehome'/
+tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/src/nopoll_conn.c:664: undefined reference to `TLS_server_method'
+../srccollect2: error: ld returned 1 exit status
+/.libs/libnopoll.a(nopoll_conn.o): In function `nopoll_conn_produce_accept_key':
+/home/tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/src/nopoll_conn.c:2591: undefined reference to `EVP_MD_CTX_new'
+/home/tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/src/nopoll_conn.c:2595: undefined reference to `EVP_MD_CTX_free'
+collect2: error: ld returned 1 exit status
+make[5]: *** [Makefile:575：nopoll-regression-client] 错误 1
+make[5]: *** 正在等待未完成的任务....
+make[5]: *** [Makefile:579：nopoll-regression-listener] 错误 1
+make[4]: *** [Makefile:458：all-recursive] 错误 1
+make[3]: *** [Makefile:367：all] 错误 2
