@@ -1,0 +1,10 @@
+prefix=/home/shikaixun/shikaixun_HDD/home/shikaixun/Code/aisdk/3rdparty/3rdprebuild/nopoll/mt8512/nopoll 
+exec_prefix=${prefix} 
+libdir=${exec_prefix}/lib 
+includedir=${prefix}/include 
+
+Name: libNoPoll
+Description: LibNoPoll: websocket toolkit library
+Version: 0.4.7.b429 
+Libs: -L${libdir} -lnopoll 
+Cflags: -I${includedir}/nopoll

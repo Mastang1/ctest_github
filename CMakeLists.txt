@@ -106,9 +106,9 @@ endif()
 set (CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
 
-# SET(CMAKE_BUILD_TYPE "Debug")
-# SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O2 -Wall -g2 -ggdb")
-SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O0 -Wall")
+option (REBUILD_ALL_THIRD_LIBRARY "rebuild all third party library" OFF)
+add_subdirectory (3rdparty)
+
 #set output path
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 
