@@ -8,14 +8,14 @@ libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
 configure: loading site script /home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/site-config-aarch64-poky-linux
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
-checking for x86_64-pc-linux-gnu-strip... aarch64-poky-linux-strip
+checking for aarch64-poky-linux-strip... aarch64-poky-linux-strip
 checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
 checking for gawk... no
 checking for mawk... mawk
 checking whether make sets $(MAKE)... yes
 checking whether make supports nested variables... yes
 checking whether to enable maintainer-specific portions of Makefiles... yes
-checking for x86_64-pc-linux-gnu-gcc... aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
+checking for aarch64-poky-linux-gcc... aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
 checking for suffix of executables... 
@@ -33,7 +33,7 @@ checking for grep that handles long lines and -e... /usr/bin/grep
 checking for egrep... /usr/bin/grep -E
 checking for ANSI C header files... (cached) yes
 checking build system type... x86_64-pc-linux-gnu
-checking host system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-poky-linux-gnu
 checking how to print strings... printf
 checking for a sed that does not truncate output... (cached) sed
 checking for fgrep... /usr/bin/grep -F
@@ -43,23 +43,23 @@ checking for BSD- or MS-compatible name lister (nm)... aarch64-poky-linux-nm
 checking the name lister (aarch64-poky-linux-nm) interface... BSD nm
 checking whether ln -s works... yes
 checking the maximum length of command line arguments... 1572864
-checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to aarch64-poky-linux-gnu format... func_convert_file_noop
 checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
 checking for aarch64-poky-linux-ld  --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux option to reload object files... -r
-checking for x86_64-pc-linux-gnu-objdump... aarch64-poky-linux-objdump
+checking for aarch64-poky-linux-objdump... aarch64-poky-linux-objdump
 checking how to recognize dependent libraries... pass_all
-checking for x86_64-pc-linux-gnu-dlltool... no
+checking for aarch64-poky-linux-dlltool... no
 checking for dlltool... no
 checking how to associate runtime and link libraries... printf %s\n
-checking for x86_64-pc-linux-gnu-ar... aarch64-poky-linux-ar
+checking for aarch64-poky-linux-ar... aarch64-poky-linux-ar
 checking for archiver @FILE support... @
-checking for x86_64-pc-linux-gnu-strip... (cached) aarch64-poky-linux-strip
-checking for x86_64-pc-linux-gnu-ranlib... aarch64-poky-linux-ranlib
+checking for aarch64-poky-linux-strip... (cached) aarch64-poky-linux-strip
+checking for aarch64-poky-linux-ranlib... aarch64-poky-linux-ranlib
 checking command to parse aarch64-poky-linux-nm output from aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux object... ok
 checking for sysroot... /home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
 checking for a working dd... /usr/bin/dd
 checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
-checking for x86_64-pc-linux-gnu-mt... no
+checking for aarch64-poky-linux-mt... no
 checking for mt... mt
 checking if mt is a manifest tool... no
 checking for sys/types.h... (cached) yes
@@ -79,12 +79,13 @@ checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=co
 checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux static flag -static works... no
 checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux supports -c -o file.o... yes
 checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux supports -c -o file.o... (cached) yes
-checking whether the aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux linker (aarch64-poky-linux-ld  --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux -m elf_x86_64) supports shared libraries... no
+checking whether the aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux linker (aarch64-poky-linux-ld  --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
 checking dynamic linker characteristics... GNU/Linux ld.so
-checking how to hardcode library paths into programs... unsupported
+checking how to hardcode library paths into programs... immediate
 checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... no
-checking whether to build shared libraries... no
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
 checking whether to build static libraries... yes
 Detected compiler: aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
 checking size of long... (cached) 8
@@ -107,7 +108,7 @@ checking for TLS_client_method in -lssl... no
 Checking vasprintf support: no
 checking for doxygen... yes
 configure: creating ./config.status
-Host detected: x86_64-pc-linux-gnu
+Host detected: aarch64-poky-linux-gnu
 config.status: creating Makefile
 config.status: creating src/Makefile
 config.status: creating doc/Makefile
@@ -142,14 +143,14 @@ config.status: nopoll_config.h is unchanged
 configure: loading site script /home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/site-config-aarch64-poky-linux
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
-checking for x86_64-pc-linux-gnu-strip... aarch64-poky-linux-strip
+checking for aarch64-poky-linux-strip... aarch64-poky-linux-strip
 checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
 checking for gawk... no
 checking for mawk... mawk
 checking whether make sets $(MAKE)... yes
 checking whether make supports nested variables... yes
 checking whether to enable maintainer-specific portions of Makefiles... no
-checking for x86_64-pc-linux-gnu-gcc... aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
+checking for aarch64-poky-linux-gcc... aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
 checking whether the C compiler works... yes
 checking for C compiler default output file name... a.out
 checking for suffix of executables... 
@@ -167,7 +168,7 @@ checking for grep that handles long lines and -e... /usr/bin/grep
 checking for egrep... /usr/bin/grep -E
 checking for ANSI C header files... (cached) yes
 checking build system type... x86_64-pc-linux-gnu
-checking host system type... x86_64-pc-linux-gnu
+checking host system type... aarch64-poky-linux-gnu
 checking how to print strings... printf
 checking for a sed that does not truncate output... (cached) sed
 checking for fgrep... /usr/bin/grep -F
@@ -177,23 +178,23 @@ checking for BSD- or MS-compatible name lister (nm)... aarch64-poky-linux-nm
 checking the name lister (aarch64-poky-linux-nm) interface... BSD nm
 checking whether ln -s works... yes
 checking the maximum length of command line arguments... 1572864
-checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to aarch64-poky-linux-gnu format... func_convert_file_noop
 checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
 checking for aarch64-poky-linux-ld  --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux option to reload object files... -r
-checking for x86_64-pc-linux-gnu-objdump... aarch64-poky-linux-objdump
+checking for aarch64-poky-linux-objdump... aarch64-poky-linux-objdump
 checking how to recognize dependent libraries... pass_all
-checking for x86_64-pc-linux-gnu-dlltool... no
+checking for aarch64-poky-linux-dlltool... no
 checking for dlltool... no
 checking how to associate runtime and link libraries... printf %s\n
-checking for x86_64-pc-linux-gnu-ar... aarch64-poky-linux-ar
+checking for aarch64-poky-linux-ar... aarch64-poky-linux-ar
 checking for archiver @FILE support... @
-checking for x86_64-pc-linux-gnu-strip... (cached) aarch64-poky-linux-strip
-checking for x86_64-pc-linux-gnu-ranlib... aarch64-poky-linux-ranlib
+checking for aarch64-poky-linux-strip... (cached) aarch64-poky-linux-strip
+checking for aarch64-poky-linux-ranlib... aarch64-poky-linux-ranlib
 checking command to parse aarch64-poky-linux-nm output from aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux object... ok
 checking for sysroot... /home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
 checking for a working dd... /usr/bin/dd
 checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
-checking for x86_64-pc-linux-gnu-mt... no
+checking for aarch64-poky-linux-mt... no
 checking for mt... mt
 checking if mt is a manifest tool... no
 checking for sys/types.h... (cached) yes
@@ -213,12 +214,13 @@ checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=co
 checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux static flag -static works... no
 checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux supports -c -o file.o... yes
 checking if aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux supports -c -o file.o... (cached) yes
-checking whether the aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux linker (aarch64-poky-linux-ld  --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux -m elf_x86_64) supports shared libraries... no
+checking whether the aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux linker (aarch64-poky-linux-ld  --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
 checking dynamic linker characteristics... GNU/Linux ld.so
-checking how to hardcode library paths into programs... unsupported
+checking how to hardcode library paths into programs... immediate
 checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... no
-checking whether to build shared libraries... no
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
 checking whether to build static libraries... yes
 Detected compiler: aarch64-poky-linux-gcc  -mcpu=cortex-a72.cortex-a53+crypto -mtune=cortex-a72.cortex-a53 --sysroot=/home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/sysroots/aarch64-poky-linux
 checking size of long... (cached) 8
@@ -241,7 +243,7 @@ checking for TLS_client_method in -lssl... no
 Checking vasprintf support: no
 checking for doxygen... yes
 configure: creating ./config.status
-Host detected: x86_64-pc-linux-gnu
+Host detected: aarch64-poky-linux-gnu
 config.status: creating Makefile
 config.status: creating src/Makefile
 config.status: creating doc/Makefile

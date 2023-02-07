@@ -99,10 +99,6 @@ configure.ac:48: installing './compile'
 configure.ac:43: installing './missing'
 src/Makefile.am: installing './depcomp'
 configure: WARNING: using cross tools not prefixed with host triplet
-aarch64-poky-linux-ld: unrecognised emulation mode: elf_x86_64
-Supported emulations: aarch64linux aarch64elf aarch64elf32 aarch64elf32b aarch64elfb armelf armelfb aarch64linuxb aarch64linux32 aarch64linux32b armelfb_linux_eabi armelf_linux_eabi
 configure: WARNING: unrecognized options: --with-ssl, --disable-extra-programs
 configure: WARNING: using cross tools not prefixed with host triplet
-aarch64-poky-linux-ld: unrecognised emulation mode: elf_x86_64
-Supported emulations: aarch64linux aarch64elf aarch64elf32 aarch64elf32b aarch64elfb armelf armelfb aarch64linuxb aarch64linux32 aarch64linux32b armelfb_linux_eabi armelf_linux_eabi
 configure: WARNING: unrecognized options: --with-ssl, --disable-extra-programs

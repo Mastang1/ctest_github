@@ -1,4 +1,4 @@
-set(command "/home/tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/autogen.sh;--host=x86_64-pc-linux-gnu")
+set(command "/home/tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/autogen.sh;--host=aarch64-poky-linux")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
@@ -8,7 +8,7 @@ if(result)
   endforeach()
   message(FATAL_ERROR "${msg}")
 endif()
-set(command "/home/tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/configure;--prefix=/home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll;--host=x86_64-pc-linux-gnu;LDFLAGS=-Wl,-rpath=/home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/openssl/linux_x64/openssl/lib;--with-ssl=/home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/openssl/linux_x64/openssl;--with-pic;--disable-extra-programs")
+set(command "/home/tang/myproject/tang_test/cTest/3rdparty/nopoll_repository/configure;--prefix=/home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll;--host=aarch64-poky-linux;LDFLAGS=-Wl,-rpath=/home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/openssl/mt-8516/openssl/lib;--with-ssl=/home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/openssl/mt-8516/openssl;--with-pic;--disable-extra-programs")
 
 execute_process(COMMAND ${command} RESULT_VARIABLE result)
 if(result)
