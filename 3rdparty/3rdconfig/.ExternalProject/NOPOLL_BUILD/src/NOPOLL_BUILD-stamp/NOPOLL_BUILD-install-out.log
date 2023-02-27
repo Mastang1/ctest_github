@@ -10,7 +10,7 @@ libtool: install: /usr/bin/install -c .libs/libnopoll.lai /home/tang/myproject/t
 libtool: install: /usr/bin/install -c .libs/libnopoll.a /home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll/lib/libnopoll.a
 libtool: install: chmod 644 /home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll/lib/libnopoll.a
 libtool: install: ranlib /home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll/lib/libnopoll.a
-libtool: finish: PATH="/home/tang/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/lib/tang-lib:/sbin" ldconfig -n /home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll/lib
+libtool: finish: PATH="/home/tang/bin:/home/tang/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/lib/tang-lib:/lib/tang-lib:/sbin" ldconfig -n /home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll/lib
 ----------------------------------------------------------------------
 Libraries have been installed in:
    /home/tang/myproject/tang_test/cTest/3rdparty/3rdprebuild/nopoll/lib

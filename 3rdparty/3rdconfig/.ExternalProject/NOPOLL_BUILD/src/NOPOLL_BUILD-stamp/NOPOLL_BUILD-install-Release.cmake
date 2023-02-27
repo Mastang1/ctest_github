@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.15)
 
-set(command "make;install")
+set(command "${make};install")
 set(log_merged "")
 set(log_output_on_failure "")
 set(stdout_log "/home/tang/myproject/tang_test/cTest/3rdparty/3rdconfig/.ExternalProject/NOPOLL_BUILD/src/NOPOLL_BUILD-stamp/NOPOLL_BUILD-install-out.log")

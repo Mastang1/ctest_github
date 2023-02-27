@@ -63,11 +63,36 @@ set(${PROJECT_NAME}_VERSION_PATCH 0)
 
 
 set (CMAKE_CXX_STANDARD 11)
-
-
 option (REBUILD_ALL_THIRD_LIBRARY "rebuild all third party library" OFF)
+
+message(STATUTS " -- start exe command")
+
+execute_process (COMMAND mkdir tangtang
+    WORKING_DIRECTORY "/home/tang/tmp"
+    )
+
+
+#[[
+###################   tang add    #####################
+include_directories(BEFORE ${OPENSSL_INSTALL_DIR}/include)
+get_directory_property(DIR_proerty INCLUDE_DIRECTORIES)
+message(STATUS " -- ###############result: ${DIR_proerty}")
+
+# ***************如果是写的相对路径，会自动添加当前路径的绝对路径到前边
+link_directories(BEFORE ${OPENSSL_INSTALL_DIR}/lib)
+get_directory_property(result LINK_DIRECTORIES)
+message(" -- ###############result: ${result}") # result:
+###################   tang add  END  #####################
+]]#
+
+
+
+
+#--------------------------------------------------------------
 add_subdirectory (3rdparty)
 
+set (testval "/home/tang/tmp")
+message(STATUS ${testval}/2008)
 
 
 

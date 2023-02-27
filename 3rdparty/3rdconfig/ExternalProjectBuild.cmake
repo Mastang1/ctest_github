@@ -12,13 +12,14 @@ function(ExternalLibBuild TargetName GitRepository GitTag SourceDir ReadyCommand
                 GIT_TAG ${GitTag}
 
                 SOURCE_DIR ${SourceDir}
-                CONFIGURE_COMMAND ${SourceDir}/${ReadyCommand} ${AutomakeArgs} COMMAND ${SourceDir}/configure ${CfgArgs}
-
+                CONFIGURE_COMMAND ${SourceDir}/${ReadyCommand} ${AutomakeArgs} 
+                                    COMMAND "${SourceDir}/configure" ${CfgArgs}
+                                    COMMAND /home/tang/myproject/Toolchains/MT8516/yocto-64bit-toolchain/my-toolchain/environment-setup-aarch64-poky-linux
                 BUILD_IN_SOURCE 1
                 BUILD_COMMAND make
                 BUILD_ALWAYS FALSE
 
-                INSTALL_COMMAND make install #COMMAND make clean
+                # INSTALL_COMMAND make install #COMMAND make clean
 
                 LOG_CONFIGURE 1
                 LOG_BUILD 1
