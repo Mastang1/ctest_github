@@ -1,7 +1,5 @@
 project (test_everyday)
 cmake_minimum_required (VERSION 3.0)
-
-
 #[[**********************************************************************
 
     编译调试信息，包含 
@@ -54,68 +52,25 @@ IF (NOT CMAKE_BUILD_TYPE)
         "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
 ENDIF()
 
-
-
-
-
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/aisdk/include)
 LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/../include/lib_curl/lib)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/lib_curl/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-# version info
-#2.1.10 add app switch >=2.1.10 app switch is work
+
 set(${PROJECT_NAME}_VERSION_MAJOR 1)
 set(${PROJECT_NAME}_VERSION_MINOR 0)
 set(${PROJECT_NAME}_VERSION_PATCH 0)
 
-#* * * * * * * * * * * * * * * * * * * * * * * * *
-#* * *   测试宏
-macro(arg_test para1 para2)
-        MESSAGE(STATUS ARGC=${ARGC})
-        MESSAGE(STATUS ARGV=${ARGV})
-        MESSAGE(STATUS ARGN=${ARGN})
-        MESSAGE(STATUS ARGV0=${ARGV0})
-        MESSAGE(STATUS ARGV1=${ARGV1})
-        MESSAGE(STATUS ARGV2=${ARGV2})
-endmacro()
- 
-set(arg_1 1)
-set(arg_2 2)
-set(arg_3 3)
-#* * * * * * * * * * * * * * * * * * * * * * * * *
-
-
-
-arg_test(${arg_1}, ${arg_2}, ${arg_3})
 #set compiler
 set (CMAKE_CXX_STANDARD 11)
-#推荐在终端中，执行cmake前，执行该操作
-
-# export CC=/usr/bin/gcc
-# export CXX=/opt/rh/gcc-toolset-11/root/usr/bin/g++
-
-
-if (BUILD_TEST)
-    message (STATUS "--------------------build tests--------------------")
-    add_definitions(-DBUILD_TEST)                        # tangadd then delete this line
-endif()
-
-
 set (CXX_STANDARD_REQUIRED ON)
 set (CMAKE_CXX_EXTENSIONS OFF)
 
-option (REBUILD_ALL_THIRD_LIBRARY "rebuild all third party library" OFF)
-add_subdirectory (3rdparty)
-
 #set output path
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
-
 find_package(Threads)
-# ------------------ add sub path----------------------
-add_subdirectory(test_inherit_class)
-
 
 add_executable(test_rand_foo test_rand_foo.cpp)
 add_executable(test_linux_timeFun test_linux_timeFun.cpp)
@@ -137,14 +92,15 @@ add_executable(test_String test_String.cc)
 
 add_executable(test_namespace test_namespace.cpp)
 add_executable(linuxFooTest linuxFooTest.cpp)
-
+add_executable(creat_binary_file creat_binary_file.cpp)
 add_executable(queuetest queuetest.cpp)
 add_executable(test_ioctl_fun test_ioctl_fun.cpp)
 add_executable(ifconfig_fun ifconfig_fun.cpp)
 add_executable(string_proc string_proc.cpp )
 add_executable(test_macro test_macro.cpp)
 add_executable(linux_sys_fun_test linux_sys_fun_test.cpp)
-
+add_executable(variable_length_paraments variable_length_paraments.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
+add_executable(test_tmp test_tmp.cpp)
 add_executable(condition_test condition_test.cc)
 target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
 
@@ -157,8 +113,7 @@ target_link_libraries(get_threadID_from_processID ${CMAKE_THREAD_LIBS_INIT})
 
 
 #=================================================================
-LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/lib_curl/lib)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/lib_curl/include)
+
 
 add_executable(test_curl test_curl.cpp)
 target_link_libraries(test_curl ${CMAKE_THREAD_LIBS_INIT})
@@ -172,16 +127,36 @@ LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 PDB_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang")
 #- -- - ----------------------------------------------------------
-
-
-
-add_executable(variable_length_paraments variable_length_paraments.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
-
 add_subdirectory(network_test)
-# add_executable(Semaphore_test Semaphore_test.cpp)
-# target_link_libraries(Semaphore_test ${CMAKE_THREAD_LIBS_INIT})
+add_subdirectory(test_inherit_class)
 
-# -------------------------------------------------
+# ###############################################################
+#[[tang  test; string compare used STREQUAL
+set(father_str "today is a nice day")
+string(FIND ${father_str} "nn" rslt)
+if( ${rslt} EQUAL -1)
+    message(STATUS "no")
+else()
+    message(STATUS "yes")
+
+endif()
+]]#
+
+#[[------------------------------------  sbmod get
+    if (WITH_DNN_VAD)
+        if(GIT_SUBMODULE)
+            execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init 3rdparty/dnn_vad/dnnvad
+                            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+                            RESULT_VARIABLE GIT_DNNVAD_SUBMOD_RESULT)
+            if(NOT GIT_DNNVAD_SUBMOD_RESULT EQUAL "0")
+                message(FATAL_ERROR "git submodule update --init dnnvad failed with ${GIT_DNNVAD_SUBMOD_RESULT}, please checkout submodules")
+            endif()
+        endif(GIT_SUBMODULE)
+        set (HAVE_DNN_VAD ON)
+    endif (WITH_DNN_VAD)
+
+]]#
+
 
 
 

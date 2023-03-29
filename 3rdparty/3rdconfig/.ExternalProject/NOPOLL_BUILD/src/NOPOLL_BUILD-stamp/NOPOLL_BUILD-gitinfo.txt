@@ -1,3 +1,0 @@
-repository='git@10.180.97.83:renegade/nopoll.git'
-module=''
-tag='origin'
