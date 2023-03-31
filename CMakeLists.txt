@@ -81,7 +81,7 @@ add_executable(test_printf_multi_char test_printf_multi_char.cpp)
 add_executable(test_regex test_regex.cpp)
 
 add_executable(test_linux_path_function test_linux_path_function.cpp)
-
+add_executable(test_for_each test_for_each.cpp)
 add_executable(two_pointers two_pointers.cpp)
 add_executable(test_TCPserver test_TCPserver.cpp )
 add_executable(test_TCPclient test_TCPclient.cpp )
@@ -99,20 +99,11 @@ add_executable(ifconfig_fun ifconfig_fun.cpp)
 add_executable(string_proc string_proc.cpp )
 add_executable(test_macro test_macro.cpp)
 add_executable(linux_sys_fun_test linux_sys_fun_test.cpp)
-add_executable(variable_length_paraments variable_length_paraments.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
+# add_executable(variable_length_paraments variable_length_paraments.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
 add_executable(test_tmp test_tmp.cpp)
 add_executable(condition_test condition_test.cc)
 target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
 
-add_executable(mulit_thread_test mulit_thread_test.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/os_adapter.cpp)
-target_link_libraries(mulit_thread_test ${CMAKE_THREAD_LIBS_INIT})
-
-add_executable(get_threadID_from_processID get_threadID_from_processID.cpp)
-target_link_libraries(get_threadID_from_processID ${CMAKE_THREAD_LIBS_INIT})
-
-
-
-#=================================================================
 
 
 add_executable(test_curl test_curl.cpp)
@@ -127,9 +118,9 @@ LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
 PDB_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang")
 #- -- - ----------------------------------------------------------
-add_subdirectory(network_test)
-add_subdirectory(test_inherit_class)
-
+add_subdirectory (network_test)
+add_subdirectory (test_inherit_class)
+add_subdirectory (mult_thread_test)
 # ###############################################################
 #[[tang  test; string compare used STREQUAL
 set(father_str "today is a nice day")

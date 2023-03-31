@@ -12,7 +12,11 @@
         "*.tcc": "cpp",
         "chrono": "cpp",
         "ctime": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "cstdlib": "cpp",
+        "limits": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp"
     },
     "workbench.colorCustomizations": {
         "activityBar.background": "#ac8e00",
