@@ -1,0 +1,4 @@
+
+add_executable(container_queue container_queue.cpp)
+add_executable(container_vector container_vector.cpp)
+add_executable(container_string container_string.cpp)

@@ -52,16 +52,6 @@ IF (NOT CMAKE_BUILD_TYPE)
         "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
 ENDIF()
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/aisdk/include)
-LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/../include/lib_curl/lib)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/lib_curl/include)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
-
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-
-set(${PROJECT_NAME}_VERSION_MAJOR 1)
-set(${PROJECT_NAME}_VERSION_MINOR 0)
-set(${PROJECT_NAME}_VERSION_PATCH 0)
 
 #set compiler
 set (CMAKE_CXX_STANDARD 11)
@@ -72,81 +62,21 @@ set (CMAKE_CXX_EXTENSIONS OFF)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/build/bin)
 find_package(Threads)
 
-add_executable(test_rand_foo test_rand_foo.cpp)
-add_executable(test_linux_timeFun test_linux_timeFun.cpp)
-add_executable(test_fork test_fork.cpp)
-add_executable(test_cpp_io_string test_cpp_io_string.cpp)
-add_executable(test_container test_container.cpp)
-add_executable(test_printf_multi_char test_printf_multi_char.cpp)
-add_executable(test_regex test_regex.cpp)
-
-add_executable(test_linux_path_function test_linux_path_function.cpp)
-add_executable(test_for_each test_for_each.cpp)
-add_executable(two_pointers two_pointers.cpp)
-add_executable(test_TCPserver test_TCPserver.cpp )
-add_executable(test_TCPclient test_TCPclient.cpp )
-
-add_executable(test_UDPserver test_UDPserver.cpp )
-add_executable(test_UDPclient test_UDPclient.cpp )
-add_executable(test_String test_String.cc)
-
-add_executable(test_namespace test_namespace.cpp)
-add_executable(linuxFooTest linuxFooTest.cpp)
-add_executable(creat_binary_file creat_binary_file.cpp)
-add_executable(queuetest queuetest.cpp)
-add_executable(test_ioctl_fun test_ioctl_fun.cpp)
-add_executable(ifconfig_fun ifconfig_fun.cpp)
-add_executable(string_proc string_proc.cpp )
 add_executable(test_macro test_macro.cpp)
-add_executable(linux_sys_fun_test linux_sys_fun_test.cpp)
-# add_executable(variable_length_paraments variable_length_paraments.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gtest_stdout_log.cpp)
+add_executable(test_regex test_regex.cpp)
 add_executable(test_tmp test_tmp.cpp)
-add_executable(condition_test condition_test.cc)
-target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
+add_executable(two_pointers two_pointers.cpp)
+add_executable(variable_length_paraments variable_length_paraments.cpp)
+
+# target_link_libraries(condition_test ${CMAKE_THREAD_LIBS_INIT})
+
+add_subdirectory (CPP_CONTAINER)
+add_subdirectory (IO_STREAM)
+add_subdirectory (OTHER_TEST)
+add_subdirectory (SYS_FUN)
+add_subdirectory (THREADS)
 
 
-
-add_executable(test_curl test_curl.cpp)
-target_link_libraries(test_curl ${CMAKE_THREAD_LIBS_INIT})
-target_link_libraries(test_curl curl)
-
-#add some target att,此处单独设置路径
-set_target_properties(test_curl
-PROPERTIES
-RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
-LIBRARY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
-ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang"
-PDB_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build/tang")
-#- -- - ----------------------------------------------------------
-add_subdirectory (network_test)
-add_subdirectory (test_inherit_class)
-add_subdirectory (mult_thread_test)
-# ###############################################################
-#[[tang  test; string compare used STREQUAL
-set(father_str "today is a nice day")
-string(FIND ${father_str} "nn" rslt)
-if( ${rslt} EQUAL -1)
-    message(STATUS "no")
-else()
-    message(STATUS "yes")
-
-endif()
-]]#
-
-#[[------------------------------------  sbmod get
-    if (WITH_DNN_VAD)
-        if(GIT_SUBMODULE)
-            execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init 3rdparty/dnn_vad/dnnvad
-                            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-                            RESULT_VARIABLE GIT_DNNVAD_SUBMOD_RESULT)
-            if(NOT GIT_DNNVAD_SUBMOD_RESULT EQUAL "0")
-                message(FATAL_ERROR "git submodule update --init dnnvad failed with ${GIT_DNNVAD_SUBMOD_RESULT}, please checkout submodules")
-            endif()
-        endif(GIT_SUBMODULE)
-        set (HAVE_DNN_VAD ON)
-    endif (WITH_DNN_VAD)
-
-]]#
 
 
 

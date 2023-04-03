@@ -38,7 +38,7 @@ int main(int argc ,char **argv)
 
     string std_str_cur_dir(current_dir);
     /******** 执行改变路径前，先判断路径是否存在 ****************/
-    std_str_cur_dir.append("./tang_bin");               //采用c++的string类来处理字符串，确实方便
+    std_str_cur_dir.append("./tang_bin");               //采用c++的string类来处理字符
     if(access(std_str_cur_dir.c_str(), F_OK) == -1){
         cout<<"new directory is not saved!"<<endl;
         

@@ -26,7 +26,7 @@ int main()
 
 #endif
 
-#if 0
+#if 1
 
 #include <stdio.h>
 #include <stdarg.h>
@@ -54,19 +54,4 @@ int main()
 }
 #endif 
 
-//#############################################################
-#if 1
-
-#include <stdio.h>
-#include <stdarg.h>
-#include "./src/gtest_stdout_log.hpp"
-
-#define GTEST_INFO testing::gtest_log::instance()->log
-int main()
-{   
-    //testing::gtest_log::instance()->log("%d",123);
-    GTEST_INFO("name:%s;\nsex:%s;\nage:%d.","TangYapeng","male", 31);
-    return 0;
-}
-#endif 
 

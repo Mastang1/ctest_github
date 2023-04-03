@@ -1,0 +1,5 @@
+add_executable(linux_change_cur_dir linux_change_cur_dir.cpp)
+add_executable(macro_test macro_test.cpp)
+add_executable(linux_strdup_test linux_strdup_test.cpp)
+add_executable(linux_time_test linux_time_test.cpp)
+add_executable(rand_test rand_test.cpp)

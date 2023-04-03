@@ -1,0 +1,3 @@
+
+add_executable(cfile_binary_file cfile_binary_file.cpp)
+add_executable(cpp_io_string cpp_io_string.cpp)
