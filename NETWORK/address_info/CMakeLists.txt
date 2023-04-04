@@ -1,0 +1,2 @@
+add_executable(test_DNS_server test_DNS_server.cpp)
+add_executable(test_getaddrinfo test_getaddrinfo.cpp)
