@@ -3,17 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-char gl_str[100] = "nice day!";
-
+#define FOO__ 1
 int main()
 {
-    char *p = NULL;
-    {
-        char char_test[100] = "\0";
-        p = char_test;
-        memcpy(char_test, gl_str, sizeof(gl_str));
-    }
-    std::cout << p <<std::endl;
+    #ifdef __linux__
+        std::cout<< " -- platform is:" << __linux__ << std::endl;
+    #endif
 
+    std::cout << " -- FOO__ is:" << FOO__;
     return 0;
 }
