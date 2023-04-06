@@ -22,6 +22,7 @@ int main(void)
 	int i, n;
 	//创建服务器端套接字文件
 	listenfd = socket(AF_INET, SOCK_STREAM, 0);
+	printf("current socket FD is %d", listenfd);
 	//初始化服务器端口地址
 	bzero(&servaddr, sizeof(servaddr));	//将服务器端口地址清零
 	servaddr.sin_family = AF_INET;
