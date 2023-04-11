@@ -76,7 +76,7 @@ add_subdirectory (OTHER_TEST)
 add_subdirectory (SYS_FUN)
 add_subdirectory (THREADS)
 add_subdirectory (NETWORK)
-
+add_subdirectory (C_CPP_MIX)
 
 
 
