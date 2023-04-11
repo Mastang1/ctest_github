@@ -52,7 +52,12 @@ IF (NOT CMAKE_BUILD_TYPE)
         "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
 ENDIF()
 
+#set gloable path
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+link_directories(${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
 #set compiler
 set (CMAKE_CXX_STANDARD 11)
 set (CXX_STANDARD_REQUIRED ON)
@@ -77,6 +82,9 @@ add_subdirectory (SYS_FUN)
 add_subdirectory (THREADS)
 add_subdirectory (NETWORK)
 add_subdirectory (C_CPP_MIX)
+add_subdirectory (COMMUNICATION)
+
+
 
 
 
