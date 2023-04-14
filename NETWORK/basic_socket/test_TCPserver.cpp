@@ -51,7 +51,7 @@ int main(void)
 		//tang test
 		printf("\n+++++ %s ++++\n", str);
 		//关闭连接
-		close(connfd);
+		//close(connfd);
 	}
 	return 0;
 }

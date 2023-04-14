@@ -5,6 +5,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <ctype.h>
+#include "sys/time.h"
 
 
 //#include <netinet/in.h>
@@ -43,6 +44,7 @@ int main(int argc, char *argv[])
 	//将客户端返回的数据打印到终端
 	write(STDOUT_FILENO, buf, n);
 	//关闭连接
+	sleep(8);
 	close(sockfd);
 	return 0;
 }

@@ -18,7 +18,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "os_adapter.hpp"
 #include <sys/types.h>
 #include <algorithm>
 
@@ -90,11 +89,10 @@ int main()
 
     cout<<"\nCurrent command is :"<<str_ps_cmd<<endl;
     
+    /* read command output */
     char ret[1024] = {0};
 	FILE *fp;
-
 	fp = popen(str_ps_cmd.c_str(),"r");
-
 	//size_t fwrite(const void *ptr, size_t size, size_t nmemb,FILE *stream);
 	int nread = fread(ret,1,1024,fp);
     pclose(fp);

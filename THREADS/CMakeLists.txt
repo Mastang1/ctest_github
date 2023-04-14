@@ -4,3 +4,6 @@ target_link_libraries(cpp11_lock_guard ${CMAKE_THREAD_LIBS_INIT})
 
 add_executable(cpp11_thread_class_test cpp11_thread_class_test.cpp)
 target_link_libraries(cpp11_thread_class_test ${CMAKE_THREAD_LIBS_INIT})
+
+add_executable(get_threadID_from_processID get_threadID_from_processID.cpp)
+target_link_libraries(get_threadID_from_processID ${CMAKE_THREAD_LIBS_INIT})
