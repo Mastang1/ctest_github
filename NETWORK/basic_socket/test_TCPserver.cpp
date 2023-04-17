@@ -8,7 +8,7 @@
 #include <ctype.h>
 
 
-#define MAXLINE 80							//最大数据长度
+#define MAXLINE 10240							//最大数据长度
 #define SERV_PORT 6666						//服务器端口号
 
 

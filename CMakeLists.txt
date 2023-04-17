@@ -83,6 +83,7 @@ add_subdirectory (THREADS)
 add_subdirectory (NETWORK)
 add_subdirectory (C_CPP_MIX)
 add_subdirectory (COMMUNICATION)
+add_subdirectory (CPP_OTHER)
 
 
 

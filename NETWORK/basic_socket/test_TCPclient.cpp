@@ -12,7 +12,7 @@
 #include<arpa/inet.h>
 
 
-#define MAXLINE 80
+#define MAXLINE 10240
 #define SERV_PORT 6666
 int main(int argc, char *argv[])
 {
