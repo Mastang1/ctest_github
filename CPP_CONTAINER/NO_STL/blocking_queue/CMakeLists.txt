@@ -1,0 +1,2 @@
+add_executable(thread_blocking_queue_test thread_blocking_queue_test.cpp thread_blocking_queue.cpp)
+target_link_libraries(thread_blocking_queue_test ${CMAKE_THREAD_LIBS_INIT})
