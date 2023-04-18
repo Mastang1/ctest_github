@@ -1,9 +1,11 @@
 
-#include "uaibot/common/QRingBuffer.hpp"
+#include "QRingBuffer.hpp"
 #include <string.h>
+#include <stdio.h>
+
 using namespace std;
 
-namespace uaibot{
+namespace typ{
 namespace common{
 
 // ThreadMutex QRingBuffer::_mutex;
@@ -17,6 +19,7 @@ QRingBuffer::QRingBuffer(int size) {
 	rbCapacity = size;
 	rbBuff = rbBuf;
 	ptr_w = ptr_r = rbBuff;
+	pthread_mutex_init(&_mutex, NULL);
 }
 
 QRingBuffer::~QRingBuffer() {
@@ -25,6 +28,7 @@ QRingBuffer::~QRingBuffer() {
 	ptr_r = NULL;
 	rbCapacity = 0;
 	delete[] rbBuf; //释放缓冲区
+	pthread_mutex_destroy(&_mutex);
 }
 /**
  * @brief QRingBuffer::rbCanRead
@@ -71,30 +75,30 @@ int QRingBuffer::read(char *data, int count) {
 		printf("lional data == null\n");
 		return 0;
 	}
-	_mutex.Lock();
+	pthread_mutex_lock(&_mutex);
 	int r = canRead();
 	if (r < count) {
-		_mutex.Unlock();
+		pthread_mutex_unlock(&_mutex);
 		return 0;
 	}
 	if (ptr_r < ptr_w) {
 		memcpy(data, ptr_r, count);
 		ptr_r += count;
-		_mutex.Unlock();
+		pthread_mutex_unlock(&_mutex);
 		return count;
 	} else {
 		int tail = rbCapacity - (ptr_r - rbBuff);
 		if (count < tail) {
 			memcpy(data, ptr_r, count);
 			ptr_r += count;
-			_mutex.Unlock();
+			pthread_mutex_unlock(&_mutex);
 			return count;
 		} else {
 			memcpy(data, ptr_r, tail);
 			ptr_r = rbBuff;
 			memcpy(data + tail, ptr_r, count - tail);
 			ptr_r += (count - tail);
-			_mutex.Unlock();
+			pthread_mutex_unlock(&_mutex);
 			return count;
 		}
 	}
@@ -117,9 +121,9 @@ int QRingBuffer::write(const char *data, int count) {
 	if (NULL == data) {
 		return 0;
 	}
-	_mutex.Lock();
+	pthread_mutex_lock(&_mutex);
 	if (count > canWrite()) {
-		_mutex.Unlock();
+		pthread_mutex_unlock(&_mutex);
 		return 0;
 	}
 
@@ -128,50 +132,50 @@ int QRingBuffer::write(const char *data, int count) {
 		if (count < tail) {
 			memcpy(ptr_w, data, count);
 			ptr_w += count;
-			_mutex.Unlock();
+			pthread_mutex_unlock(&_mutex);
 			return count;
 		} else {
 			memcpy(ptr_w, data, tail);
 			ptr_w = rbBuff;
 			memcpy(ptr_w, data + tail, count - tail);
 			ptr_w += (count - tail);
-			_mutex.Unlock();
+			pthread_mutex_unlock(&_mutex);
 			return count;
 		}
 	} else {
 		memcpy(ptr_w, data, count);
 		ptr_w += count;
-		_mutex.Unlock();
+		pthread_mutex_unlock(&_mutex);
 		return count;
 	}
 }
 void QRingBuffer::clear() {
-	_mutex.Lock();
+	pthread_mutex_lock(&_mutex);
 	ptr_w = ptr_r = rbBuff;
-	_mutex.Unlock();
+	pthread_mutex_unlock(&_mutex);
 }
 void QRingBuffer::clearTo(int bytes) {
-	_mutex.Lock();
+	pthread_mutex_lock(&_mutex);
 	int r = canRead();
 	if (r <= bytes) {
-		_mutex.Unlock();
+		pthread_mutex_unlock(&_mutex);
 		return;
 	}
 	int count=r-bytes;
 	if (ptr_r < ptr_w) {
 		ptr_r += count;
-		_mutex.Unlock();
+		pthread_mutex_unlock(&_mutex);
 		return;
 	} else {
 		int tail = rbCapacity - (ptr_r - rbBuff);
 		if (count < tail) {
 			ptr_r += count;
-			_mutex.Unlock();
+			pthread_mutex_unlock(&_mutex);
 			return;
 		} else {
 			ptr_r = rbBuff;
 			ptr_r += (count - tail);
-			_mutex.Unlock();
+			pthread_mutex_unlock(&_mutex);
 			return;
 		}
 	}

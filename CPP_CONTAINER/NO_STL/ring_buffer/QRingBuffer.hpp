@@ -1,12 +1,11 @@
 #ifndef QRINGBUFFER_H_
 #define QRINGBUFFER_H_
 
-#include "ubicai/core/os_adapter.hpp"
+#include "pthread.h"
 
-namespace uaibot{
+namespace typ{
 namespace common{
 
-using namespace uai::core;
 
 #ifndef RB_MAX_LEN
 #define RB_MAX_LEN (16000*4) //2s
@@ -35,7 +34,7 @@ public:
     unsigned char  *ptr_r;
     unsigned char  *ptr_w;
     unsigned char  *rbBuff;
-    ThreadMutex _mutex;
+    pthread_mutex_t _mutex;
 };
 
 }}

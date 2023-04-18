@@ -1,8 +1,8 @@
 #ifndef __UAIBOT_COMMON_THREAD_BLOCKING_QUEUE_HPP__
 #define __UAIBOT_COMMON_THREAD_BLOCKING_QUEUE_HPP__
 
-#include "ubicai/core/os_adapter.hpp"
 #include <queue>
+#include "pthread.h"
 
 namespace uaibot { namespace common {
 
